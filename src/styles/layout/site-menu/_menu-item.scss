@@ -1,0 +1,76 @@
+@use '../../abstract' as var;
+
+.menu-item {
+  position: relative;
+
+  color: var.$brand-black;
+
+  border-bottom: 1px solid var.$brand-primary-light;
+  cursor: pointer;
+
+  &:first-child {
+    border-top: 1px solid var.$brand-primary-light;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    background-size: cover;
+  }
+
+  &::before {
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+  }
+
+  &::after {
+    right: 1px;
+
+    width: 14px;
+    height: 14px;
+    margin-top: -7px;
+
+    // background-image: url("../../../public/images/right-arrow.svg");
+
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+.menu-item__link {
+  display: block;
+  padding: 15px 15px 15px 45px;
+
+  font-size: 12px;
+  color: inherit;
+  line-height: 1.1;
+
+  &:hover,
+  &:active {
+    color: inherit;
+  }
+}
+
+@for $i from 2 through 8 {
+
+  .menu-item--cat-#{$i}::before {
+    // background-image: url("../images/cat_#{$i}.png");
+  }
+}
+
+.menu-item:hover {
+  color: var.$brand-info;
+
+  &::after {
+    transform: translateX(4px);
+  }
+}
+

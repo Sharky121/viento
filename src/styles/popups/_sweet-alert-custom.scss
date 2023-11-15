@@ -1,0 +1,40 @@
+@use '../abstract' as var;
+@use 'sweetalert2/src/variables';
+
+$swal2-close-button-hover-color: var.$brand-primary;
+$swal2-close-button-color: var.$brand-primary;
+
+@use 'sweetalert2/src/sweetalert2';
+
+.swal2-close {
+  width: 45px;
+  height: 45px;
+
+  color: var.$brand-primary;
+
+  background-color: var.$brand-white;
+  border-radius: 50%;
+
+  &:hover,
+  &:active {
+    color: var.$brand-white;
+
+    background-color: var.$brand-primary;
+  }
+}
+
+.swal2-html-container {
+  padding: 0;
+  margin: 0;
+
+  iframe {
+    width: 100%;
+  }
+}
+
+@include var.tablet-size {
+
+  .swal2-html-container {
+    padding: 25px;
+  }
+}

@@ -1,0 +1,59 @@
+@use '../abstract' as var;
+
+.about {
+  background-color: var.$brand-light;
+}
+
+.about__container {
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+
+.about__left {
+  display: none;
+}
+
+.about__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.about__text {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.about__btn {
+  margin-top: 20px;
+}
+
+@include var.tablet-size {
+
+  .about__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@include var.desktop-size {
+
+  .about__container {
+    width: var.$desktop-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .about__left {
+    display: block;
+    margin-right: 35px;
+  }
+}

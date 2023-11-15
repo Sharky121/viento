@@ -1,0 +1,21 @@
+@use '../../abstract' as var;
+
+.footer-logo__link {
+  line-height: 1;
+
+  img {
+    width: 120px;
+    height: 34px;
+  }
+}
+
+@include var.tablet-size {
+
+  .footer-logo__link {
+
+    img {
+      width: 180px;
+      height: 51px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@use '../abstract' as var;
+
+.page-main__callback {
+  margin-top: 15px;
+}
+
+.page-main__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 15px;
+}
+
+@include var.tablet-size {
+
+}
+
+@include var.desktop-size {
+
+  .page-main__container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 
+      [full-start] minmax(0, 1fr) 
+        [container-start aside-start] 278px [aside-end main-start] calc(#{var.$desktop-width} - 278px) [main-end container-end] 
+      minmax(0, 1fr) [full-end];
+    padding: 35px 0;
+  }
+
+  .page-main__menu {
+    grid-column: aside-start/ aside-end;
+  }
+
+  .main-content__welcome {
+    grid-column: main-start/ main-end;
+  }
+
+  .main-content__product-cards {
+    grid-column: main-start/ main-end;
+  }
+
+  .page-main__about {
+    grid-column: full-start/ full-end;
+  }
+
+  .page-main__callback {
+    grid-column: full-start/ full-end;
+  }
+
+  .page-main__content {
+    grid-column: main-start/ main-end;
+  }
+}

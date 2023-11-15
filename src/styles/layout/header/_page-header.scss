@@ -1,0 +1,84 @@
+@use '../../abstract' as var;
+
+.page-header {
+  @extend %box-shadow;
+}
+
+.page-header__download {
+  display: none;
+}
+
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding-left: 0;
+}
+
+.page-header__hamburger {
+  order: 1;
+}
+
+.page-header__logo {
+  order: 2;
+}
+
+.page-header__contacts {
+  order: 3;
+}
+
+.page-header__nav {
+  display: none;
+}
+
+@include var.tablet-size {
+
+  .page-header__container {
+    padding-left: 30px;
+  }
+
+  .page-header__logo {
+    order: 0;
+  }
+
+  .page-header__hamburger {
+    display: none;
+  }
+
+  .page-header__download {
+    display: inline-flex;
+    order: 2;
+    min-width: 140px;
+    padding: 10px 15px;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
+  .page-header__nav {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@include var.desktop-size {
+
+  .page-header__container {
+    justify-content: flex-start;
+    height: 80px;
+  }
+
+  .page-header__logo {
+    margin-right: 80px;
+  }
+
+  .page-header__nav {
+    order: 2;
+    margin-left: 0;
+  }
+
+  .page-header__download {
+    min-width: 167px;
+    padding: 15px 30px;
+  }
+}

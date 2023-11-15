@@ -1,0 +1,50 @@
+@use '../abstract' as var;
+
+.paginate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .page-numbers {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+    flex-basis: 44px;
+    margin-right: 10px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(24, 117, 188, 0.5);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .current {
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .prev,
+  .next {
+    padding: 0;
+
+    box-shadow: none;
+  }
+
+  .next svg {
+    transform: rotate(180deg);
+  }
+}
+
+@include var.tablet-size {
+
+  .page-numbers {
+    font-size: 20px;
+  }
+}

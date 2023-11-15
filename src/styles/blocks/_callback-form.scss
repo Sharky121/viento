@@ -1,0 +1,45 @@
+@use '../abstract' as var;
+
+.callback-form__list {
+  @extend %list-reset;
+
+  margin-bottom: 10px;
+}
+
+.callback-form__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+    margin-top: 25px;
+  }
+}
+
+.callback-form__btn {
+  width: 100%;
+}
+
+.callback-form__confirm {
+  margin: 0;
+}
+
+@include var.tablet-size {
+
+  .callback-form__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .callback-form__item {
+    width: calc((100% - 10px) / 3);
+    margin-right: 10px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+      margin-top: 0;
+    }
+  }
+}

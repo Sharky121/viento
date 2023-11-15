@@ -1,0 +1,56 @@
+@use '../abstract' as var;
+
+.welcome {
+  background-image: url("../../../public/images/welcome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.welcome__wrapper {
+  position: relative;
+
+  height: 100%;
+}
+
+.welcome__box {
+  padding: 15px;
+  margin-top: auto;
+
+  background-color: rgba(var.$brand-white, .9);
+  border-radius: 15px;
+}
+
+.welcome__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.welcome__text {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.welcome__btn {
+  margin-top: 15px;
+}
+
+@include var.desktop-size {
+
+  .welcome {
+    height: 468px;
+  }
+
+  .welcome__wrapper {
+    display: flex;
+    padding: 20px;
+  }
+
+  .welcome__box {
+    width: 511px;
+  }
+}

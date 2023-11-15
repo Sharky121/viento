@@ -1,0 +1,33 @@
+@use './fonts';
+@use './base';
+@use './helpers';
+
+// POPUPS
+// @use "popups";
+
+// BLOCKS
+// @use './blocks/content-header';
+@use './blocks/buttons';
+// @use './blocks/seo';
+@use './blocks/callback';
+@use './blocks/callback-form';
+@use './blocks/form-field';
+@use './blocks/checkbox';
+@use './blocks/about';
+@use './blocks/welcome';
+@use './blocks/product-card';
+@use './blocks/product-cards';
+// @use './blocks/product';
+// @use './blocks/catalog';
+// @use './blocks/paginate';
+// @use './blocks/address';
+
+// LAYOUT
+@use './layout/container';
+@use './layout/header';
+@use './layout/site-menu';
+
+@use './layout/page';
+@use './layout/main-content';
+@use './layout/footer';
+

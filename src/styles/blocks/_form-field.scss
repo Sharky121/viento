@@ -1,0 +1,22 @@
+@use '../abstract' as var;
+
+.form-field__input {
+  width: 100%;
+  padding: 12px;
+
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1;
+
+  border-radius: 10px;
+  border: 2px solid var.$brand-primary;
+
+  &:focus,
+  &:focus-visible{
+    outline: none;
+  }
+}
+
+@include var.tablet-size {
+
+}

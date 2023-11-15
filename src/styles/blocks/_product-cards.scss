@@ -1,0 +1,44 @@
+@use '../abstract' as var;
+
+.product-cards__list {
+  @extend %list-reset;
+}
+
+.product-cards__item {
+  margin-bottom: 10px;
+}
+
+@include var.tablet-size {
+
+  .product-cards__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .product-cards__item {
+    width: calc((100% - 10px) / 2);
+    margin-right: 10px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@include var.desktop-size {
+
+  .product-cards__item {
+    width: calc((100% - 10px * 3) / 4);
+    margin-right: 10px;
+
+    &:nth-child(2n) {
+      margin-right: 10px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}

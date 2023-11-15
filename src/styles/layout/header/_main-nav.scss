@@ -1,0 +1,72 @@
+@use '../../abstract' as var;
+
+.main-nav {
+  display: block;
+}
+
+.main-nav__list {
+  @extend %list-reset;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main-nav__item {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.main-nav__link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: var.$brand-black;
+
+  transition: background-color 1s;
+
+  &:hover,
+  &:active {
+    color: var.$brand-primary;
+  }
+
+  &:focus {
+    outline-style: solid;
+    outline-color: transparent;
+
+    transition: none;
+  }
+}
+
+.main-nav__link--catalog {
+  position: relative;
+
+  padding-left: 38px;
+
+  font-weight: 700;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+
+    background-image: url("../../../../public/images/ico-square.svg");
+    background-size: cover;
+  }
+}
+
+@include var.desktop-size {
+
+  .main-nav__item {
+    margin-right: 30px;
+  }
+}

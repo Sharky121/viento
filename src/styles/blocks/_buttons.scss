@@ -1,0 +1,66 @@
+@use '../abstract' as var;
+
+.btn {
+  @extend %btn-reset;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 167px;
+  padding: 15px 30px;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: var.$brand-white;
+  white-space: nowrap;
+
+  border-radius: 15px;
+  border: 1px solid var.$brand-primary;
+  background-color: var.$brand-primary;
+
+  transition: all 0.3s;
+
+  &:hover,
+  &:active {
+    background-color: scale-color(var.$brand-primary, $lightness: -20%);
+  }
+
+  &:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 2px scale-color(var.$brand-primary, $lightness: -40%);
+  }
+}
+
+.btn--primary {
+
+  &:hover,
+  &:active {
+    color: var.$brand-primary;
+
+    background-color: var.$brand-white;
+  }
+}
+
+.btn--outline {
+  color: var.$brand-primary;
+
+  background-color: transparent;
+
+  &:hover,
+  &:active {
+    background-color: var.$brand-primary;
+    color: var.$brand-white;
+
+    transition: none;
+  }
+
+  &:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 2px scale-color(var.$brand-primary, $lightness: -40%);
+
+    transition: none;
+  }
+}

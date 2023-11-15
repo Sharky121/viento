@@ -1,0 +1,71 @@
+@use '../../abstract' as var;
+
+.header-contacts {
+  display: block;
+  height: 34px;
+  width: 34px;
+}
+
+.header-contacts__phone {
+  color: var.$brand-primary;
+
+  span {
+    display: none;
+  }
+
+  &:hover,
+  &:active {
+    color: scale-color(var.$brand-primary, $lightness: -20%);
+  }
+}
+
+.header-contacts__address {
+  display: none;
+}
+
+@include var.desktop-size {
+
+  .header-contacts {
+    height: auto;
+    width: auto;
+
+    line-height: 1;
+  }
+
+  .header-contacts__phone {
+    margin-bottom: 4px;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    color: var.$brand-black;
+
+    svg {
+      display: none;
+    }
+
+    span {
+      display: block;
+      font-weight: 400;
+    }
+
+    b {
+      padding-right: 3px;
+      font-weight: 700;
+    }
+
+    small {
+      padding-left: 3px;
+
+      font-size: 12px;
+    }
+  }
+
+  .header-contacts__address {
+    display: inline-block;
+
+    font-size: 11px;
+    line-height: 1;
+    color: var.$brand-primary;
+  }
+}

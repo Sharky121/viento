@@ -1,0 +1,68 @@
+@use '../abstract' as var;
+
+.main-content {
+  width: 100%;
+}
+
+.main-content__back {
+  position: relative;
+
+  display: block;
+  padding-left: 30px;
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+
+  color: var.$brand-grey;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid var.$brand-primary-light;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-top: -19px;
+
+    background-image: url("../../../public/images/left-arrow.svg");
+    background-size: cover;
+
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+.main-content__back:hover,
+.main-content__back:active {
+  color: darken(var.$brand-grey, 30%);
+
+  &::before {
+    transform: translateX(-4px);
+  }
+}
+
+.main-content__header {
+  margin-bottom: 30px;
+}
+
+.main-content__paginate {
+  margin: 20px 0;
+}
+
+@include var.desktop-size {
+
+  .main-content {
+    width: calc(100% - (248px + 20px));
+  }
+
+  .main-content__header {
+    margin-bottom: 60px;
+  }
+}

@@ -1,0 +1,20 @@
+@use '../../abstract' as var;
+
+.logo {
+  line-height: 1;
+}
+
+.logo img {
+  height: 34px;
+  width: 120px;
+
+  vertical-align: middle;
+}
+
+@include var.desktop-size {
+
+  .logo img {
+    height: 51px;
+    width: 180px;
+  }
+}
