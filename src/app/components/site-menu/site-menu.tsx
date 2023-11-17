@@ -7,10 +7,11 @@ type SiteMenuType = {
 type ProductType = {
     id: string;
     title: string;
+    slug: string;
 }
 
 async function getData() {
-    const response = await fetch("http://localhost:3002/api/products");
+    const response = await fetch(`${process.env.HOST}/api/categories`);
 
     return response.json();
 }
@@ -25,7 +26,7 @@ export default async function SiteMenu({customClassName}: SiteMenuType) {
             <ul className="site-menu__list">
                 {products.map((product: ProductType) => (
                     <li key={product.id} className="site-menu__item menu-item">
-                        <Link className="menu-item__link" href="">{product.title}</Link>
+                        <Link className="menu-item__link" href={`/products/${product.slug}`}>{product.title}</Link>
                     </li>
                 ))}
             </ul>

@@ -6,7 +6,7 @@
 // @use "popups";
 
 // BLOCKS
-// @use './blocks/content-header';
+@use './blocks/content-header';
 @use './blocks/buttons';
 // @use './blocks/seo';
 @use './blocks/callback';
@@ -17,10 +17,10 @@
 @use './blocks/welcome';
 @use './blocks/product-card';
 @use './blocks/product-cards';
-// @use './blocks/product';
-// @use './blocks/catalog';
-// @use './blocks/paginate';
-// @use './blocks/address';
+@use './blocks/product';
+@use './blocks/catalog';
+@use './blocks/paginate';
+@use './blocks/address';
 
 // LAYOUT
 @use './layout/container';

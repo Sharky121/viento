@@ -2,10 +2,6 @@
 
 const nextConfig = {
     webpack: (config, options) => {
-      config.externals = {
-        ymaps3: 'ymaps3'
-      }
-
       return config;
     },
   }

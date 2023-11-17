@@ -58,10 +58,6 @@
 
 @include var.desktop-size {
 
-  .main-content {
-    width: calc(100% - (248px + 20px));
-  }
-
   .main-content__header {
     margin-bottom: 60px;
   }

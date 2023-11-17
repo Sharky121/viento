@@ -23,7 +23,7 @@ export default function Header({customClassName}: HeaderType) {
                 <nav className="page-header__nav main-nav">
                     <ul className="main-nav__list">
                         <li className="main-nav__item">
-                            <Link className="main-nav__link main-nav__link--catalog" href="/catalog">Каталог</Link>
+                            <Link className="main-nav__link main-nav__link--catalog" href="/products">Каталог</Link>
                         </li>
                         <li className="main-nav__item">
                             <Link className="main-nav__link" href="/about">О компании</Link>

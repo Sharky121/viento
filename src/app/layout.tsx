@@ -5,7 +5,6 @@ import '../styles/global.scss';
 import SiteMenu from './components/site-menu/site-menu';
 import Footer from './components/footer/footer';
 import SvgIcons from './components/svg-icons/svg-icons';
-import Script from 'next/dist/client/script';
 
 export const metadata: Metadata = {
   title: 'Виенто - вентиляционные cистемы',
@@ -31,7 +30,6 @@ export default function RootLayout({
 
         <Footer customClassName="page__footer"/>
         <SvgIcons/>
-        <Script strategy="beforeInteractive" src="https://api-maps.yandex.ru/v3/?apikey=35840616-b492-4206-8ff4-d366f778ac13&lang=ru_RU"/>
       </body>
     </html>
   )
