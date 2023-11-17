@@ -24,11 +24,11 @@ export default async function SiteMenu({customClassName}: SiteMenuType) {
             <h3 className="site-menu__title">Я ищу изделия в категории:</h3>
 
             <ul className="site-menu__list">
-                {/* {products.map((product: ProductType) => (
+                {products.map((product: ProductType) => (
                     <li key={product.id} className="site-menu__item menu-item">
                         <Link className="menu-item__link" href="">{product.title}</Link>
                     </li>
-                ))} */}
+                ))}
             </ul>
         </div>
     )
