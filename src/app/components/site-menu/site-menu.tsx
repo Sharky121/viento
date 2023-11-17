@@ -10,14 +10,14 @@ type ProductType = {
     slug: string;
 }
 
-// async function getData() {
-//     const response = await fetch(`${process.env.HOST}/api/categories`);
+async function getData() {
+    const response = await fetch(`${process.env.HOST}/api/categories`);
 
-//     return response.json();
-// }
+    return response.json();
+}
 
 export default async function SiteMenu({customClassName}: SiteMenuType) {
-    // const products = await getData();
+    const products = await getData();
 
     return (
         <div className={`${customClassName} site-menu`}>
