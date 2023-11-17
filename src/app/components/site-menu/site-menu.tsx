@@ -17,7 +17,7 @@ type ProductType = {
 // }
 
 export default async function SiteMenu({customClassName}: SiteMenuType) {
-    const products = await getData();
+    // const products = await getData();
 
     return (
         <div className={`${customClassName} site-menu`}>
