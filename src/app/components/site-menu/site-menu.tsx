@@ -26,7 +26,7 @@ export default async function SiteMenu({customClassName}: SiteMenuType) {
             <ul className="site-menu__list">
                 {products.map((product: ProductType) => (
                     <li key={product.id} className="site-menu__item menu-item">
-                        <Link className="menu-item__link" href={`/products/${product.slug}`}>{product.title}</Link>
+                        <Link className="menu-item__link" href="">{product.title}</Link>
                     </li>
                 ))}
             </ul>
