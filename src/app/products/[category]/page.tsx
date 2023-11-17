@@ -42,6 +42,12 @@ export default async function Page({ params: {category} }: any) {
         return obj.slug === category;
     })
 
+    const getPhotoProduct = (image: string) => {
+        return image.length 
+            ? `public/images/${category}/${image}` 
+            : "public/images/no-photo.svg"
+    }
+
     return (
         <>
             <div className="page-main__content main-content">
@@ -54,10 +60,10 @@ export default async function Page({ params: {category} }: any) {
 
                 <section className="main-content__product-cards product-cards">
                     <ul className="product-cards__list">
-                        {categoryData.subcategory.map(({id, title, slug}: { id: string, title: string, slug: string }) => (
+                        {categoryData.subcategory.map(({id, title, slug, image}: { id: string, title: string, image: string, slug: string }) => (
                             <li key={id} className="product-cards__item product-card">
                                 <div className="product-card__img">
-                                    <Image src={NoPhotoPic} width="70" height="70" alt="Нет фото"/>
+                                    <Image src={getPhotoProduct(image)} width="70" height="70" alt="Нет фото"/>
                                 </div>
                     
                                 <h3 className="product-card__title">{title}</h3>
