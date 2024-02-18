@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import NoPhotoPic from 'public/images/no-photo.svg';
+import { v4 as uuidv4 } from 'uuid';
 
 type PageType = {
     params: {
@@ -23,17 +24,12 @@ async function getData() {
         }
     });
 
+    if (!response.ok) {
+        throw new Error('Failed to fetch data')
+    }
+
     return response.json();
 }
-
-// export async function generateStaticParams() {
-//     const categories = await fetch(`${process.env.HOST}/api/categories`).then((res) => res.json())
-   
-//     return categories.map((category: CategoryType) => ({
-//         category: category.slug,
-//         subcategory: category.subcategory,
-//     }));
-// }
 
 export default async function Page({ params: {category} }: any) {
     const categories = await getData();
@@ -61,7 +57,7 @@ export default async function Page({ params: {category} }: any) {
                 <section className="main-content__product-cards product-cards">
                     <ul className="product-cards__list">
                         {categoryData.subcategory.map(({id, title, slug, image}: { id: string, title: string, image: string, slug: string }) => (
-                            <li key={id} className="product-cards__item product-card">
+                            <li key={id + uuidv4()} className="product-cards__item product-card">
                                 <div className="product-card__img">
                                     {getPhotoProduct(image, slug)}
                                 </div>

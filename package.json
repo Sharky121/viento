@@ -16,7 +16,8 @@
     "react-dom": "^18",
     "sharp": "0.33.1",
     "swiper": "^11.0.6",
-    "uuidv4": "^6.2.13"
+    "uuidv4": "^6.2.13",
+    "ymaps": "^0.2.1"
   },
   "devDependencies": {
     "@types/node": "^20",

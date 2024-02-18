@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { v4 as uuidv4 } from 'uuid';
 
 async function getData() {
     const response = await fetch(`${process.env.HOST}/api/categories`, {
@@ -35,7 +36,7 @@ export default async function Page({ params: {category, subcategory} }: any) {
                 <section className="main-content__product-cards product-cards">
                     <ul className="product-cards__list">
                         {productsList.products.map(({id, title, slug, product_image}: { id: string, title: string, product_image: string, slug: string }) => (
-                            <li key={id} className="product-cards__item product-card">
+                            <li key={id + uuidv4()} className="product-cards__item product-card">
                                 <div className="product-card__img">
                                     <Image src={`/images/${subcategory}/${product_image}`} width="180" height="180" alt="Фото продукта"/>
                                 </div>
