@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Gallery from "@/app/components/gallery/gallery";
 import { v4 as uuidv4 } from 'uuid';
 

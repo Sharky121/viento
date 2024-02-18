@@ -1,0 +1,11 @@
+@use '../abstract' as var;
+
+.product-scheme__title {
+    text-align: center
+}
+
+.product-scheme__img {
+    position: relative;
+
+    height: 300px;
+}

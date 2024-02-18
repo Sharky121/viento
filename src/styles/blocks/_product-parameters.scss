@@ -1,5 +1,9 @@
 @use '../abstract' as var;
 
+.product-parameters__title {
+    text-align: center
+}
+
 .product-parameters__list {
     @extend %list-reset;
 

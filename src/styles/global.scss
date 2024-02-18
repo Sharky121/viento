@@ -25,6 +25,8 @@
 @use './blocks/catalog';
 @use './blocks/paginate';
 @use './blocks/address';
+@use './blocks/product-scheme';
+@use './blocks/product-wiring-scheme';
 
 // LAYOUT
 @use './layout/container';

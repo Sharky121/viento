@@ -1,0 +1,11 @@
+@use '../abstract' as var;
+
+.product-wiring-scheme__title {
+    text-align: center
+}
+
+.product-wiring-scheme__img {
+    position: relative;
+
+    height: 300px;
+}
