@@ -1,6 +1,4 @@
 import Script from 'next/dist/client/script';
-import Map from '@/app/components/map/map';
-import { v4 as uuidv4 } from 'uuid';
 
 export default function Page() {
     
@@ -12,7 +10,6 @@ export default function Page() {
                 <div className="main-content__header content-header">
                     <h2 className="content-header__title">Контакты</h2>
                 </div>
-                <Map/>
                 <div className="main-content__contacts contacts">
                     <div className="contacts__col">
                         <dl className="address__list">
