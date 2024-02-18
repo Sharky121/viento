@@ -29,7 +29,7 @@ export default async function Page({ params: {category, subcategory} }: any) {
                 
                 <div className="main-content__header content-header">
                     <h2 className="content-header__title">Каталог</h2>
-                    <p className="content-header__name">{subcategory}</p>
+                    <p className="content-header__name">{productsList.title}</p>
                 </div>
 
                 <section className="main-content__product-cards product-cards">
