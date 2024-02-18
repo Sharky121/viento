@@ -22,8 +22,6 @@ export default async function Page({ params: {category, subcategory} }: any) {
         return obj.slug === subcategory;
     });
 
-    console.log(productsList.products);
-
     return (
         <>
             <div className="page-main__content main-content">
