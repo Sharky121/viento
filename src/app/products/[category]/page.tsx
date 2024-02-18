@@ -42,10 +42,10 @@ export default async function Page({ params: {category} }: any) {
         return obj.slug === category;
     })
 
-    const getPhotoProduct = (image: string) => {
+    const getPhotoProduct = (image: string, slug: string) => {
         return image.length 
-            ? `public/images/${category}/${image}` 
-            : "public/images/no-photo.svg"
+            ? <Image src={`/images/${slug}/${image}`} width="180" height="180" alt="Фото продукта"/>
+            : <Image src="/images/no-photo.svg" width="70" height="70" alt="Нет фото"/>
     }
 
     return (
@@ -63,7 +63,7 @@ export default async function Page({ params: {category} }: any) {
                         {categoryData.subcategory.map(({id, title, slug, image}: { id: string, title: string, image: string, slug: string }) => (
                             <li key={id} className="product-cards__item product-card">
                                 <div className="product-card__img">
-                                    <Image src={getPhotoProduct(image)} width="70" height="70" alt="Нет фото"/>
+                                    {getPhotoProduct(image, slug)}
                                 </div>
                     
                                 <h3 className="product-card__title">{title}</h3>

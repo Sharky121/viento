@@ -1,0 +1,12 @@
+@use '../abstract' as var;
+
+.product-thumbs {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.product-thumbs__slide {
+    width: calc((300px - 10px * 3) / 4);
+
+    cursor: pointer;
+}

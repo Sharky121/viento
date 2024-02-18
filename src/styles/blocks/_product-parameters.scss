@@ -1,0 +1,72 @@
+@use '../abstract' as var;
+
+.product-parameters__list {
+    @extend %list-reset;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.product-parameters__item {
+    position: relative;
+
+    width: calc((100% - 15px * 3) / 4);
+    margin-right: 15px;
+    margin-bottom: 30px;
+
+    text-align: center;
+    // font-size: 16px;
+
+    &:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    &::before {
+        content: '';
+
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &--size::before {
+        background-image: url('/images/sizes.png');
+    }
+
+    &--width::before {
+        background-image: url('/images/width.png');
+    }
+
+    &--height::before {
+        background-image: url('/images/height.png');
+    }
+
+    &--depth::before {
+        background-image: url('/images/depth.png');
+    }
+
+    &--size__door::before {
+        background-image: url('/images/sizes_2.png');
+    }
+
+    &--width_door::before {
+        background-image: url('/images/width_2.png');
+    }
+
+    &--height_door::before {
+        background-image: url('/images/height_2.png');
+    }
+
+    &--weight::before {
+        background-image: url('/images/weight.png');
+    }
+}

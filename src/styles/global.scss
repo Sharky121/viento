@@ -8,6 +8,8 @@
 // BLOCKS
 @use './blocks/content-header';
 @use './blocks/buttons';
+@use './blocks/product-swiper';
+@use './blocks/product-thumbs';
 // @use './blocks/seo';
 @use './blocks/callback';
 @use './blocks/callback-form';
@@ -18,6 +20,8 @@
 @use './blocks/product-card';
 @use './blocks/product-cards';
 @use './blocks/product';
+@use './blocks/product-parameters';
+@use './blocks/product-description';
 @use './blocks/catalog';
 @use './blocks/paginate';
 @use './blocks/address';
