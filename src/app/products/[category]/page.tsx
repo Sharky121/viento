@@ -18,11 +18,7 @@ type CategoryType = {
 }
 
 async function getData() {
-    const response = await fetch(`${process.env.HOST}/api/categories`, {
-        next: {
-            revalidate: 60
-        }
-    });
+    const response = await fetch(`${process.env.HOST}/api/categories`);
 
     if (!response.ok) {
         throw new Error('Failed to fetch data')

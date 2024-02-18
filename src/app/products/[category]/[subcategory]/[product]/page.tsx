@@ -3,11 +3,7 @@ import Gallery from "@/app/components/gallery/gallery";
 import { v4 as uuidv4 } from 'uuid';
 
 async function getData() {
-    const response = await fetch(`${process.env.HOST}/api/categories`, {
-        next: {
-            revalidate: 60
-        }
-    });
+    const response = await fetch(`${process.env.HOST}/api/categories`);
 
     return response.json();
 }
