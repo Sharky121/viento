@@ -6,8 +6,29 @@
         "subcategory": [
             {
                 "id": "1",
-                "title": "subcat",
-                "slug": "subcat1",
+                "title": "Виенто 100 STILL",
+                "slug": "still_100",
+                "image": "",
+                "products": []
+            },
+            {
+                "id": "2",
+                "title": "Виенто 125 STILL",
+                "slug": "still_125",
+                "image": "",
+                "products": []
+            },
+            {
+                "id": "3",
+                "title": "Виенто B 100 STILL",
+                "slug": "still_b_100",
+                "image": "",
+                "products": []
+            },
+            {
+                "id": "3",
+                "title": "Виенто B 125 STILL",
+                "slug": "still_b_125",
                 "image": "",
                 "products": []
             }
