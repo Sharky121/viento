@@ -51,19 +51,24 @@ export default async function Page({ params: {category, subcategory, product} }:
                                 }
                             </ul>
                         </div>
-                        <div className="product__content">
-                            <div className="product-parameters">
-                                <h2 className="product-parameters__title">Технические характеристики</h2>
 
-                                <ul className="product-parameters__list">
-                                    {
-                                        productData.parameters.map(({slug, title}: any, index: string) => (
-                                            <li key={index + uuidv4()} className={`product-parameters__item product-parameters__item--${slug}`}>{title}</li>
-                                        ))
-                                    }
-                                </ul>
-                            </div>
-                        </div>
+                        {
+                            productData.parameters.lenght && (
+                                <div className="product__content">
+                                    <div className="product-parameters">
+                                        <h2 className="product-parameters__title">Технические характеристики</h2>
+        
+                                        <ul className="product-parameters__list">
+                                            {
+                                                productData.parameters.map(({slug, title}: any, index: string) => (
+                                                    <li key={index + uuidv4()} className={`product-parameters__item product-parameters__item--${slug}`}>{title}</li>
+                                                ))
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                            )
+                        }
                     </div>
                 </section>
             </div>

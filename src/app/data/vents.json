@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "title": "Вентиляторы вытяжные STILL",
+        "slug": "ventilyatory_vytyazhnye_still",
+        "subcategory": [
+            {
+                "id": "1",
+                "title": "subcat",
+                "slug": "subcat1",
+                "image": "",
+                "products": []
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "title": "Вентиляторы вытяжные ВИЕНТО",
+        "slug": "ventilyatory_vytyazhnye_viento",
+        "subcategory": [
+            {
+                "id": "1",
+                "title": "subcat",
+                "slug": "subcat1",
+                "image": "",
+                "products": []
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "title": "Вентиляторы канальные VKO",
+        "slug": "Ventilyatory_kanal'nye_vko",
+        "subcategory": [
+            {
+                "id": "1",
+                "title": "subcat",
+                "slug": "subcat1",
+                "image": "",
+                "products": []
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "title": "Вентиляторы потолочные",
+        "slug": "Ventilyatory_potolochnye",
+        "subcategory": [
+            {
+                "id": "1",
+                "title": "subcat",
+                "slug": "subcat1",
+                "image": "",
+                "products": []
+            }
+        ]
+    }
+]
