@@ -19,6 +19,8 @@ export default async function Page({ params }: any) {
         return obj.type === params.subcategories;
     });
 
+    console.log(params.subcategories);
+// /images/vents/ventilyatory_potolochnye/ventilyatory_potolochnye_125/ventilyator_osevoj_potolochnyj_viento_125VF
     return (
         <>
             <div className="page-main__content main-content">
@@ -35,7 +37,7 @@ export default async function Page({ params }: any) {
                             <li key={id + uuidv4()} className="product-cards__item product-card">
                                 
                                 <div className="product-card__img">
-                                    <Image src={`/images/ventilyatory_potolochnye/${params.subcategories}/${slug}/image_1.png`} width="180" height="180" alt="Фото продукта"/>
+                                    <Image src={`/images/vents/ventilyatory_potolochnye/${params.subcategories}/${slug}/index.png`} width="180" height="180" alt="Фото продукта"/>
                                 </div>
                     
                                 <h3 className="product-card__title">{title}</h3>
