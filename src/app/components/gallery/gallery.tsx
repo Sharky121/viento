@@ -20,7 +20,6 @@ const Gallery = ({images, url}: GalleryType) => {
     const thumbsRef = useRef(null);
 
     console.log(url);
-    console.log(images);
 
     useEffect(() => {
         Fancybox.bind('[data-fancybox="gallery"]', {
