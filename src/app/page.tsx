@@ -1,6 +1,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+const fs = require('fs');
 import ProdPic_1 from 'public/images/prod_1.png';
 import ProdPic_2 from 'public/images/prod_2.png';
 import ProdPic_3 from 'public/images/prod_3.png';

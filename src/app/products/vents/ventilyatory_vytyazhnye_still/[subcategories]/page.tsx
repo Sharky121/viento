@@ -35,7 +35,7 @@ export default async function Page({ params }: any) {
                             <li key={id + uuidv4()} className="product-cards__item product-card">
                                 
                                 <div className="product-card__img">
-                                    <Image src={`/images/ventilyatory_vytyazhnye_still/${params.subcategories}/${slug}/image_1.png`} width="180" height="180" alt="Фото продукта"/>
+                                    <Image src={`/images/vents/ventilyatory_vytyazhnye_still/${params.subcategories}/${slug}/index.png`} width="180" height="180" alt="Фото продукта"/>
                                 </div>
                     
                                 <h3 className="product-card__title">{title}</h3>

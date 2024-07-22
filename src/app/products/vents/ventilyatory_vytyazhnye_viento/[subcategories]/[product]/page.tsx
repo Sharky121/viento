@@ -31,7 +31,7 @@ export default async function Page({ params }: any) {
                 <section className="main-content__product product">
                     <div className="product__container">
                         <div className="product__image">
-                            <Gallery images={productData.images} url={`/images/${params.slug}`}/>
+                            <Gallery images={productData.images} url={`/images/vents/ventilyatory_vytyazhnye_viento/${params.subcategories}/${params.product}`}/>
                         </div>
                         <div className="product__description product-description">
                             <h1 className="product-description__title">{productData.title}</h1>

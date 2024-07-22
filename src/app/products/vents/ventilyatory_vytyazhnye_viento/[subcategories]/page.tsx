@@ -22,7 +22,7 @@ export default async function Page({ params }: any) {
     return (
         <>
             <div className="page-main__content main-content">
-                <a className="main-content__back" href='/products/vents/ventilyatory_vytyazhnye_viento/'>Назад</a>
+                <a className="main-content__back" href={`/products/vents/ventilyatory_vytyazhnye_viento`}>Назад</a>
                 
                 <div className="main-content__header content-header">
                     <h2 className="content-header__title">Каталог</h2>
@@ -35,7 +35,7 @@ export default async function Page({ params }: any) {
                             <li key={id + uuidv4()} className="product-cards__item product-card">
                                 
                                 <div className="product-card__img">
-                                    <Image src={`/images/ventilyatory_vytyazhnye_viento/${params.subcategories}/${slug}/image_1.png`} width="180" height="180" alt="Фото продукта"/>
+                                    <Image src={`/images/vents/ventilyatory_vytyazhnye_viento/${params.subcategories}/${slug}/index.png`} width="180" height="180" alt="Фото продукта"/>
                                 </div>
                     
                                 <h3 className="product-card__title">{title}</h3>

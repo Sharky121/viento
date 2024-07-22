@@ -41,7 +41,7 @@ export default async function Page() {
                         {data.map(({id, title, slug}: { id: string, title: string, slug: string }) => (
                             <li key={id + uuidv4()} className="product-cards__item product-card">
                                 <div className="product-card__img">
-                                    <Image src={`/images/`} width="180" height="180" alt="Фото продукта"/>
+                                    <Image src={`/images/vents/${slug}/index.png`} width="180" height="180" alt="Фото продукта"/>
                                 </div>
                     
                                 <h3 className="product-card__title">{title}</h3>
