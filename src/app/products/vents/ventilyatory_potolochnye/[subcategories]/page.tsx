@@ -19,8 +19,6 @@ export default async function Page({ params }: any) {
         return obj.type === params.subcategories;
     });
 
-    console.log(params.subcategories);
-// /images/vents/ventilyatory_potolochnye/ventilyatory_potolochnye_125/ventilyator_osevoj_potolochnyj_viento_125VF
     return (
         <>
             <div className="page-main__content main-content">

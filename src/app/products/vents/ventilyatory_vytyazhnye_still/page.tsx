@@ -22,7 +22,7 @@ export default async function Page() {
     return (
         <>
             <div className="page-main__content main-content">
-                <a className="main-content__back" id="back-page">Назад</a>
+                <a className="main-content__back" href="/products/vents">Назад</a>
                 
                 <div className="main-content__header content-header">
                     <h2 className="content-header__title">Каталог</h2>

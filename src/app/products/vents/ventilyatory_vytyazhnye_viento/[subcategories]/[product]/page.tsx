@@ -5,7 +5,7 @@ async function getData() {
     const response = await fetch(`${process.env.HOST}/api/exhaust`);
 
     if (!response.ok) {
-        throw new Error('Failed to fetch data')
+        throw new Error('Failed to fetch data');
     }
 
     return response.json();
@@ -22,7 +22,7 @@ export default async function Page({ params }: any) {
         <>
             <div className="page-main__content main-content">
                 <a className="main-content__back" href={`/products/vents/ventilyatory_vytyazhnye_viento/${params.subcategories}`}>Назад</a>
-                
+
                 <div className="main-content__header content-header">
                     <h2 className="content-header__title">Каталог</h2>
                     <p className="content-header__name">Вентиляторы вытяжные</p>
