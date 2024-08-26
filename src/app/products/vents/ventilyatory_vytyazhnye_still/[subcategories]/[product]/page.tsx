@@ -34,7 +34,10 @@ export default async function Page({ params }: any) {
                             <Gallery images={productData.images} url={`/images/vents/ventilyatory_vytyazhnye_still/${params.subcategories}/${params.product}`}/>
                         </div>
                         <div className="product__description product-description">
-                            <h1 className="product-description__title">{productData.title} <br /> <span>Цвет: {productData.color}</span></h1>
+                            <h1 className="product-description__title">{productData.title} <br /> 
+                                <span>Доступные цвета: {productData.color.join(', ') + '.'}
+                                </span>
+                            </h1>
                             <ul className="product-description__list">
                                 {
                                     productData.specifications.map((item: string, index: string) => (
