@@ -28,6 +28,8 @@
 @use './blocks/address';
 @use './blocks/product-scheme';
 @use './blocks/product-wiring-scheme';
+@use './blocks/product-size';
+@use './blocks/product-sizes';
 
 // LAYOUT
 @use './layout/container';

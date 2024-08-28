@@ -1,4 +1,5 @@
 import Gallery from '@/app/components/gallery/gallery';
+import Image from "next/image";
 import { v4 as uuidv4 } from 'uuid';
 
 async function getData() {
@@ -9,6 +10,29 @@ async function getData() {
     }
 
     return response.json();
+}
+
+const sizesMap = {
+    "width": {
+        "title": "Ширина",
+        "src": "ico-width"
+    },
+    "length": {
+        "title": "Длина",
+        "src": "ico-height"
+    },
+    "depth": {
+        "title": "Глубина",
+        "src": "ico-depth"
+    },
+    "full_depth": {
+        "title": "Глубина",
+        "src": "ico-full-depth"
+    },
+    "diameter": {
+        "title": "Диаметр",
+        "src": "ico-diameter"
+    }
 }
 
 export default async function Page({ params }: any) {
@@ -52,6 +76,23 @@ export default async function Page({ params }: any) {
                                     ))
                                 }
                             </ul>
+                            {productData.sizes && (
+                                <div className="product__sizes product-sizes">
+                                    <h3 className="product-sizes__title">Размеры:</h3>
+                                    <ul className="product-sizes__list">
+                                        {
+                                            Object.entries(productData.sizes).map(([key, value]) => (
+                                                <li className="product-sizes__item product-size">
+                                                    <Image src={`/images/${sizesMap[key].src}.png`} width="40" height="40" alt="Иконка"/>
+                                                    <span className="product-size__value">{value}</span>
+                                                    
+                                                    <h3 className="product-size__title">{sizesMap[key].title} (мм)</h3>
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </section>
