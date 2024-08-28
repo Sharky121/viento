@@ -18,9 +18,7 @@ type GalleryType = {
 const Gallery = ({images, url}: GalleryType) => {
     const galleryRef = useRef(null);
     const thumbsRef = useRef(null);
-
-    console.log(url);
-
+    console.log(images);
     useEffect(() => {
         Fancybox.bind('[data-fancybox="gallery"]', {
             Thumbs: {
@@ -65,17 +63,21 @@ const Gallery = ({images, url}: GalleryType) => {
                 </div>
             </div>
 
-            <div className="swiper product-thumbs" ref={thumbsRef}>
-                <div className="swiper-wrapper product-thumbs__wrapper">
-                    {
-                        images.map((image, index) => (
-                            <div key={index + uuidv4()} className="swiper-slide product-thumbs__slide">
-                                <Image src={`${url}/${image}`} style={{objectFit: "contain"}} width="60" height="60" alt="Фото продукта"/>
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
+            {
+                images.length > 1 && (
+                    <div className="swiper product-thumbs" ref={thumbsRef}>
+                        <div className="swiper-wrapper product-thumbs__wrapper">
+                            {
+                                images.map((image, index) => (
+                                    <div key={index + uuidv4()} className="swiper-slide product-thumbs__slide">
+                                        <Image src={`${url}/${image}`} style={{objectFit: "contain"}} width="60" height="60" alt="Фото продукта"/>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+                )
+            }
         </>
     )
 }
