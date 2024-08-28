@@ -1,0 +1,12 @@
+@use '../abstract' as var;
+
+.product-size__value {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.product-size__title {
+    margin: 0;
+
+    font-size: 12px;
+}

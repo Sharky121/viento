@@ -12,7 +12,16 @@ async function getData() {
     return response.json();
 }
 
-const sizesMap = {
+type SizeInfoType = {
+    title: string,
+    src: string
+}
+
+type SizesMapType = {
+    [key: string]: SizeInfoType
+}
+
+const sizesMap: SizesMapType = {
     "width": {
         "title": "Ширина",
         "src": "ico-width"
@@ -34,6 +43,7 @@ const sizesMap = {
         "src": "ico-diameter"
     }
 }
+
 
 export default async function Page({ params }: any) {
     const data = await getData();
@@ -81,13 +91,15 @@ export default async function Page({ params }: any) {
                                     <h3 className="product-sizes__title">Размеры:</h3>
                                     <ul className="product-sizes__list">
                                         {
-                                            Object.entries(productData.sizes).map(([key, value]) => (
-                                                <li className="product-sizes__item product-size">
-                                                    <Image src={`/images/${sizesMap[key].src}.png`} width="40" height="40" alt="Иконка"/>
-                                                    <span className="product-size__value">{value}</span>
-                                                    
-                                                    <h3 className="product-size__title">{sizesMap[key].title} (мм)</h3>
-                                                </li>
+                                            Object
+                                                .entries(productData.sizes)
+                                                .map(([key, value], index: number) => (
+                                                    <li key={index + uuidv4()} className="product-sizes__item product-size">
+                                                        <Image src={`/images/${sizesMap[key].src}.png`} width="40" height="40" alt="Иконка"/>
+
+                                                        <p className="product-size__value">{String(value)}</p>
+                                                        <h3 className="product-size__title">{sizesMap[key].title} (мм)</h3>
+                                                    </li>
                                             ))
                                         }
                                     </ul>
