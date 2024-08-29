@@ -18,7 +18,7 @@ type GalleryType = {
 const Gallery = ({images, url}: GalleryType) => {
     const galleryRef = useRef(null);
     const thumbsRef = useRef(null);
-    console.log(images);
+
     useEffect(() => {
         Fancybox.bind('[data-fancybox="gallery"]', {
             Thumbs: {
@@ -30,7 +30,7 @@ const Gallery = ({images, url}: GalleryType) => {
             new Swiper(thumbsRef.current, {
                 slidesPerView: 4,
                 navigation: false,
-                spaceBetween: 10,
+                spaceBetween: 0,
             });
           }
 

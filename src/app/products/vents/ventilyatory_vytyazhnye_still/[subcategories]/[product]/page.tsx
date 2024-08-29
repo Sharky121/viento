@@ -89,20 +89,21 @@ export default async function Page({ params }: any) {
                             {productData.sizes && (
                                 <div className="product__sizes product-sizes">
                                     <h3 className="product-sizes__title">Размеры:</h3>
-                                    <ul className="product-sizes__list">
-                                        {
-                                            Object
-                                                .entries(productData.sizes)
-                                                .map(([key, value], index: number) => (
-                                                    <li key={index + uuidv4()} className="product-sizes__item product-size">
-                                                        <Image src={`/images/${sizesMap[key].src}.png`} width="40" height="40" alt="Иконка"/>
-
-                                                        <span className="product-size__value">{String(value)}</span>
-                                                        <h3 className="product-size__title">{sizesMap[key].title} (мм)</h3>
-                                                    </li>
-                                            ))
-                                        }
-                                    </ul>
+                                    <div className="product-sizes__wrapper">
+                                        <ul className="product-sizes__list">
+                                            {
+                                                Object
+                                                    .entries(productData.sizes)
+                                                    .map(([key, value], index: number) => (
+                                                        <li key={index + uuidv4()} className="product-sizes__item product-size">
+                                                            <Image src={`/images/${sizesMap[key].src}.png`} width="30" height="30" alt="Иконка размера"/>
+                                                            <p className="product-size__value">{String(value)}</p>
+                                                            <h3 className="product-size__title">{sizesMap[key].title} (мм)</h3>
+                                                        </li>
+                                                ))
+                                            }
+                                        </ul>
+                                    </div>
                                 </div>
                             )}
                         </div>

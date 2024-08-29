@@ -1,10 +1,17 @@
 @use '../abstract' as var;
 
+.product-sizes__wrapper {
+    padding: 20px 30px;
+
+    border: 1px solid var.$brand-primary-light;
+    border-radius: 15px;
+}
+
 .product-sizes__list {
     @extend %list-reset;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 30px;
 }
@@ -18,6 +25,7 @@
 
 .product-sizes__title {
     margin-top: 0;
+    margin-bottom: 10px;
 
     font-size: 18px;
 }

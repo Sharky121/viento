@@ -1,8 +1,11 @@
 @use '../abstract' as var;
 
 .product-size__value {
+    margin-top: 10px;
+    margin-bottom: 0;
+    
     font-weight: 700;
-    font-size: 36px;
+    font-size: 26px;
 }
 
 .product-size__title {
