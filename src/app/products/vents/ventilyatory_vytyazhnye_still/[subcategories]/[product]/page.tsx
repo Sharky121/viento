@@ -97,7 +97,7 @@ export default async function Page({ params }: any) {
                                                     <li key={index + uuidv4()} className="product-sizes__item product-size">
                                                         <Image src={`/images/${sizesMap[key].src}.png`} width="40" height="40" alt="Иконка"/>
 
-                                                        <p className="product-size__value">{String(value)}</p>
+                                                        <span className="product-size__value">{String(value)}</span>
                                                         <h3 className="product-size__title">{sizesMap[key].title} (мм)</h3>
                                                     </li>
                                             ))
