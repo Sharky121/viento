@@ -15,11 +15,16 @@ const data = [
     },
     {
         "id": "3",
+        "title": "Вентиляторы вытяжные ВИЕНТО System+",
+        "slug": "ventilyatory_vytyazhnye_viento_system_plus"
+    },
+    {
+        "id": "4",
         "title": "Вентиляторы канальные VKO",
         "slug": "ventilyatory_kanalnye_vko"
     },
     {
-        "id": "4",
+        "id": "5",
         "title": "Вентиляторы потолочные",
         "slug": "ventilyatory_potolochnye"
     }

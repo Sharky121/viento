@@ -1,0 +1,104 @@
+@use "../../../../../../styles/abstract" as var;
+
+.description {
+    order: 2;
+    width: calc(100% - 330px);
+    margin-left: 30px;
+}
+
+.descriptionTitle {
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 30px;
+  
+    font-size: 18px;
+    line-height: 1.2;
+
+    span {
+        font-size: 12px;
+    }
+}
+
+.descriptionList {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.productSpecs {
+    order: 3;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.productSpecsWrapper {
+    padding: 20px 30px;
+
+    border: 1px solid var.$brand-primary-light;
+    border-radius: 15px;
+}
+
+.productSpecsTitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-size: 18px;
+}
+
+.productSpecsList {
+    @extend %list-reset;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.productSpecsItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc((100% - 15px * 6) / 7);
+
+    text-align: center;
+}
+
+.productSpecsItemValue {
+    margin: 0;
+    
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.productSpecsItemTitle {
+    margin: 0;
+
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.documents {
+    width: 100%;
+    margin-top: 30px;
+    order: 4
+}
+
+.documentsTitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-size: 18px;
+}
+
+@include var.tablet-size {
+
+    .descriptionTitle {
+        margin-bottom: 20px;
+
+        font-size: 24px;
+
+        span {
+            font-size: 14px;
+        }
+    }
+}

@@ -11,7 +11,7 @@ import 'swiper/css';
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 type GalleryType = {
-    images: string[];
+    images: string[] | undefined;
     url: string;
 }
 
@@ -52,7 +52,7 @@ const Gallery = ({images, url}: GalleryType) => {
             <div className="swiper product-swiper" ref={galleryRef}>
                 <div className="swiper-wrapper product-swiper__wrapper">
                     {
-                        images.map((image, index) => (
+                        images?.map((image, index) => (
                             <div key={index + uuidv4()} className="swiper-slide product-swiper__slide">
                                 <a className="product-swiper__link" href={`${url}/${image}`} data-fancybox="gallery">
                                     <Image src={`${url}/${image}`} style={{objectFit: "contain"}} width="240" height="240" alt="Фото продукта"/>
@@ -64,11 +64,11 @@ const Gallery = ({images, url}: GalleryType) => {
             </div>
 
             {
-                images.length > 1 && (
+                (images !== undefined && images.length > 1) && (
                     <div className="swiper product-thumbs" ref={thumbsRef}>
                         <div className="swiper-wrapper product-thumbs__wrapper">
                             {
-                                images.map((image, index) => (
+                                images?.map((image, index) => (
                                     <div key={index + uuidv4()} className="swiper-slide product-thumbs__slide">
                                         <Image src={`${url}/${image}`} style={{objectFit: "contain"}} width="60" height="60" alt="Фото продукта"/>
                                     </div>

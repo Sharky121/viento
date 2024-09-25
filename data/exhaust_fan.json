@@ -4,6 +4,13 @@
         "title": "Вентилятор вытяжной ВИЕНТО 100СК",
         "slug": "vytyazhnoy_ventilyator_viento_100CK",
         "type": "vytyazhnoy_ventilyator_100",
+        "sizes": {
+            "width": 150,
+            "length": 150,
+            "depth": 55,
+            "full_depth": 75,
+            "diameter": 100
+        },
         "specifications": [
             "Производительность 130 м3/ч",
             "Давление 28 Па",
@@ -26,11 +33,7 @@
             "С тяговым выключателем"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -59,11 +62,7 @@
             "С обратным клапаном"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -92,11 +91,7 @@
             "С обратным клапаном"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -126,11 +121,7 @@
             "С тяговым выключателем"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -160,11 +151,7 @@
             "С датчиком влажности"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -193,11 +180,7 @@
             "С таймером"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -227,11 +210,7 @@
             "С тяговым выключателем"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -261,11 +240,7 @@
             "С датчиком влажности"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -294,11 +269,7 @@
             "С таймером"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -326,11 +297,7 @@
             "Диаметр фланца 125"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -359,11 +326,7 @@
             "С тяговым выключателем"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -392,11 +355,7 @@
             "С обратным клапаном"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -425,11 +384,7 @@
             "С обратным клапаном"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -457,11 +412,7 @@
             "Диаметр фланца 100"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -490,11 +441,7 @@
             "С тяговым выключателем"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -524,11 +471,7 @@
             "С тяговым выключателем"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -558,11 +501,7 @@
             "С датчиком влажности"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -591,11 +530,7 @@
             "С таймером"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -623,11 +558,7 @@
             "Диаметр фланца 125"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -656,11 +587,7 @@
             "С тяговым выключателем"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -689,11 +616,7 @@
             "С обратным клапаном"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -722,11 +645,7 @@
             "С тяговым выключателем"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -756,11 +675,7 @@
             "С датчиком влажности"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     },
     {
@@ -789,11 +704,7 @@
             "С таймером"
         ],
         "images": [
-            "image_1.png",
-            "image_2.png",
-            "image_3.png",
-            "image_4.png",
-            "image_5.png"
+            "image_1.png"
         ]
     }
 ]
