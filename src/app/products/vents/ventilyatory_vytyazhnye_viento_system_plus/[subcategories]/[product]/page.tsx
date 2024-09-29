@@ -96,12 +96,18 @@ const Products = [
         "images": [
             "image_1.png",
             "image_2.png",
-            "image_3.png"
+            "image_3.png",
+            "image_4.png",
+            "image_5.png",
+            "image_6.png",
+            "image_7.png",
+            "image_8.png",
+            "image_9.png"
         ]
     },
     {
         "id": 3,
-        "title": "Тип панели GORIZON",
+        "title": "Тип панели GORIZONT",
         "slug": "licevye_paneli_gorizont",
         "color": ["белый", "белый матовый", "черный", "черный матовый", "серый", "слоновая кость", "слоновая кость матовый", "красный", "золотой", "хром"],
         "features": [
@@ -115,7 +121,11 @@ const Products = [
         "images": [
             "image_1.png",
             "image_2.png",
-            "image_3.png"
+            "image_3.png",
+            "image_4.png",
+            "image_5.png",
+            "image_6.png",
+            "image_7.png"
         ]
     },
     {
@@ -132,9 +142,9 @@ const Products = [
             "Возможные комплектации: пластик, стекло, прямая панель, изогнутая панель, лицевая панель под плитку",
         ],
         "images": [
+            "index.png",
             "image_1.png",
-            "image_2.png",
-            "image_3.png"
+            "image_2.png"
         ]
     },
     {
@@ -188,7 +198,11 @@ const Products = [
         "images": [
             "image_1.png",
             "image_2.png",
-            "image_3.png"
+            "image_3.png",
+            "image_4.png",
+            "image_5.png",
+            "image_6.png",
+            "image_7.png"
         ]
     },
     {
@@ -378,7 +392,7 @@ export default async function Page({ params }: any) {
                 <section className="main-content__product product">
                     <div className="product__container">
                         <div className="product__image">
-                            <Gallery images={productData?.images} url={`/images/vents/ventilyatory_vytyazhnye_still/${params.subcategories}/${params.product}`}/>
+                            <Gallery images={productData?.images} url={`/images/vents/ventilyatory_vytyazhnye_viento_system_plus/${params.subcategories}/${params.product}`}/>
                         </div>
                         <div className={styles.description}>
                             <h1 className={styles.descriptionTitle}>{productData?.title} <br /> 
