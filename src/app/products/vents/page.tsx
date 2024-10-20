@@ -27,6 +27,11 @@ const data = [
         "id": "5",
         "title": "Вентиляторы потолочные",
         "slug": "ventilyatory_potolochnye"
+    },
+    {
+        "id": "6",
+        "title": "Обратный клапан универсальный",
+        "slug": "obratnyj_klapan_universalnyj"
     }
 ]
 
