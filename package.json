@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.33",
+    "@floating-ui/react": "^0.26.27",
     "modern-normalize": "^2.0.0",
     "next": "14.0.2",
     "react": "^18",

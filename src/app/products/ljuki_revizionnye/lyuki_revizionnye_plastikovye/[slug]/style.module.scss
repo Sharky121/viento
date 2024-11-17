@@ -1,0 +1,31 @@
+@use './../../../../../styles/abstract' as var;
+
+.sizes {
+    width: 100%;
+    order: 3;
+    margin-top: 20px;
+}
+
+.sizesList {
+    @extend %list-reset;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.sizesItem {
+    width: calc((100% - 5px * 9) / 10);
+    padding: 5px 10px;
+    border: 1px solid var.$brand-primary;
+
+    color: var.$brand-primary;
+    cursor: pointer;
+
+    &:hover {
+        color: #ffffff;
+        background-color: var.$brand-primary;
+    }
+}

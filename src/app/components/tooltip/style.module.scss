@@ -1,0 +1,44 @@
+.tooltip {
+    padding: 4px 8px;
+
+    font-size: 13px;
+
+    border-radius: 4px;
+    background-color: #a9b1c2;
+    color: #ffffff;
+}
+
+.tooltipTitle {
+    margin-top: 0;
+    margin-bottom: 5px;
+
+    font-size: 12px;
+}
+
+.tooltip dl div {
+    margin-bottom: 2px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.tooltip dl {
+    margin: 0;
+}
+
+.tooltip dt, 
+.tooltip dd {
+    display: inline;
+    margin: 0;
+}
+
+.tooltip dt {
+    position: relative;
+
+    margin-right: 3px;
+
+    &::after {
+        content: ':';
+    }
+}
