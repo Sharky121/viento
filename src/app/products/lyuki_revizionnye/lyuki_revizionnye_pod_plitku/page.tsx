@@ -25,20 +25,6 @@ export default async function Page() {
         }; 
     }[] = [];
 
-    for (let i = 10; i <= 100; i = i + 5) {
-        for (let j = 10; j <= 100; j = j + 5) {
-            sizes.push({
-                "article": `${i}${j}`,
-                 "sizes": { 
-                    "width": Number(`${i}0`),
-                    "length": Number(`${j}0`)
-                }
-            })
-        }
-    }
-
-    console.log(product);
-
     return (
         <>
             <div className="page-main__content main-content">
@@ -79,7 +65,7 @@ export default async function Page() {
                             <h3>Размеры</h3>
                             <ul className={styles.sizesList}>
                                 {
-                                    sizes
+                                    product.sizes
                                         .map(({article, sizes}: 
                                             {
                                                 article: string, 
