@@ -13,24 +13,25 @@ async function getData() {
     return response.json();
 }
 
-export default async function Page({ params }: any) {
-    const data = await getData();
+export default async function Page() {
+    // const data = await getData();
 
-    const products = data
-        .filter(({type}: {type: string}) => type === 'alum')
-        .map((item: {title: string, slug: string}, index: number) => {
+    // const products = data
+    //     .filter(({type}: {type: string}) => type === 'alum')
+    //     .map((item: {title: string, slug: string}, index: number) => {
 
-        return {
-            "id": index,
-            "title": item.title,
-            "slug": item.slug,
-            "s": slugify(item.title, '_')
-        }
-    });
+    //     return {
+    //         "id": index,
+    //         "title": item.title,
+    //         "slug": item.slug,
+    //         "s": slugify(item.title, '_')
+    //     }
+    // });
 
     return (
         <>
-            <div className="page-main__content main-content">
+            <p>dsd</p>
+            {/* <div className="page-main__content main-content">
                 <a className="main-content__back" href="/products/ljuki_revizionnye">Назад</a>
                 
                 <div className="main-content__header content-header">
@@ -52,7 +53,7 @@ export default async function Page({ params }: any) {
                         ))}
                     </ul>
                 </section>
-            </div>
+            </div> */}
         </>
     )
 }
