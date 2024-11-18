@@ -2,6 +2,31 @@
 
 .featuresList {
     @extend %list-reset; 
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.featuresItem {
+    position: relative;
+
+    padding-left: 15px;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        top: 9px;
+
+        display: block;
+        width: 4px;
+        height: 4px;
+
+        border-radius: 50%;
+        background-color: var.$brand-info;
+    }
 }
 
 .productDesc {
@@ -38,13 +63,5 @@
     &:hover {
         color: #ffffff;
         background-color: var.$brand-primary;
-    }
-}
-
-.productDesc {
-    margin-top: 20px;
-
-    p {
-        margin: 0;
     }
 }

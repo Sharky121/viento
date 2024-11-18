@@ -49,7 +49,7 @@ export default async function Page() {
                             <ul className={styles.featuresList}>
                                 {
                                     product.features.map((item: string, index: string) => (
-                                        <li key={index} className="product-description__item">{item}</li>
+                                        <li key={index} className={styles.featuresItem}>{item}</li>
                                     ))
                                 }
                             </ul>
