@@ -18,8 +18,6 @@ export default async function Page({params}: any) {
     const product = data
         .find(({type}: {type: string}) => type === 'floor');
 
-        console.log(product);
-
     return (
         <>
             <div className="page-main__content main-content">

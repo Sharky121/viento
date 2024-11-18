@@ -20,8 +20,6 @@ export default async function Page({ params }: any) {
         .filter(({type}: {type: string}) => type === 'metal')
         .map((item: {title: string, slug: string}, index: number) => {
 
-        console.log(item);
-
         return {
             "id": index,
             "title": item.title,
