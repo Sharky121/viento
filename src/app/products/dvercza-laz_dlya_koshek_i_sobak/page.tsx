@@ -14,8 +14,7 @@ async function getData() {
 export default async function Page() {
     const data = await getData();
 
-    const product = data
-        .find(({type}: {type: string}) => type === 'pets');
+    const product = data.find(({type}: {type: string}) => type === 'pets');
 
     return (
         <>
