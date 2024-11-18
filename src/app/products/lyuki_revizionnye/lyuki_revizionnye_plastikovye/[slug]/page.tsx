@@ -20,7 +20,7 @@ export default async function Page({params}: any) {
     return (
         <>
             <div className="page-main__content main-content">
-                <a className="main-content__back" href='/products/ljuki_revizionnye/lyuki_revizionnye_plastikovye/' id="back-page">Назад</a>
+                <a className="main-content__back" href='/products/lyuki_revizionnye/lyuki_revizionnye_plastikovye/' id="back-page">Назад</a>
                 
                 <div className="main-content__header content-header">
                     <h2 className="content-header__title">Каталог</h2>
@@ -30,7 +30,7 @@ export default async function Page({params}: any) {
                 <section className="main-content__product product">
                     <div className="product__container">
                         <div className="product__image">
-                            <Gallery images={product.images} url={`/images/ljuki_revizionnye/lyuki_revizionnye_plastikovye/${params.slug}`}/>
+                            <Gallery images={product.images} url={`/images/lyuki_revizionnye/lyuki_revizionnye_plastikovye/${params.slug}`}/>
                         </div>
                         <div className="product__description product-description">
                             <h1 className="product-description__title">

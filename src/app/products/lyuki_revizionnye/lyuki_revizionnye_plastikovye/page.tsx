@@ -30,7 +30,7 @@ export default async function Page() {
     return (
         <>
             <div className="page-main__content main-content">
-                <a className="main-content__back" href="/products/ljuki_revizionnye">Назад</a>
+                <a className="main-content__back" href="/products/lyuki_revizionnye">Назад</a>
                 
                 <div className="main-content__header content-header">
                     <h2 className="content-header__title">Каталог</h2>
@@ -42,11 +42,11 @@ export default async function Page() {
                         {products.map(({id, title, slug}: { id: number, title: string, slug: string }) => (
                             <li key={id + uuidv4()} className="product-cards__item product-card">
                                 <div className="product-card__img">
-                                    <Image src={`/images/ljuki_revizionnye/lyuki_revizionnye_plastikovye/${slug}/index.png`} width="180" height="180" alt="Фото продукта"/>
+                                    <Image src={`/images/lyuki_revizionnye/lyuki_revizionnye_plastikovye/${slug}/index.png`} width="180" height="180" alt="Фото продукта"/>
                                 </div>
                     
                                 <h3 className="product-card__title">{title}</h3>
-                                <Link className="product-card__btn btn btn--outline" href={`/products/ljuki_revizionnye/lyuki_revizionnye_plastikovye/${slug}`}>Подробнее</Link>
+                                <Link className="product-card__btn btn btn--outline" href={`/products/lyuki_revizionnye/lyuki_revizionnye_plastikovye/${slug}`}>Подробнее</Link>
                             </li>
                         ))}
                     </ul>
