@@ -1,5 +1,5 @@
 import Gallery from "@/app/components/gallery/gallery";
-import style from './style.module.scss';
+import styles from './style.module.scss';
 import Tooltip from "@/app/components/tooltip/tooltip";
 
 async function getData() {
@@ -15,29 +15,29 @@ async function getData() {
 export default async function Page({params}: any) {
     const data = await getData();
 
-    const product = data.find((element: any) => element.slug ===  params.slug);
+    const product = data
+        .find(({type}: {type: string}) => type === 'floor');
+
+        console.log(product);
 
     return (
         <>
             <div className="page-main__content main-content">
-                <a className="main-content__back" href='/products/ljuki_revizionnye/lyuki_revizionnye_plastikovye/' id="back-page">Назад</a>
+                <a className="main-content__back" href='/products/ljuki_revizionnye/' id="back-page">Назад</a>
                 
                 <div className="main-content__header content-header">
                     <h2 className="content-header__title">Каталог</h2>
-                    <p className="content-header__name">Люки ревизионные пластиковые</p>
+                    <p className="content-header__name">Люки ревизионные напольные</p>
                 </div>
 
                 <section className="main-content__product product">
                     <div className="product__container">
                         <div className="product__image">
-                            <Gallery images={product.images} url={`/images/ljuki_revizionnye/lyuki_revizionnye_plastikovye/${params.slug}`}/>
+                            <Gallery images={product.images} url={`/images/ljuki_revizionnye/lyuki_revizionnye_napolnye`}/>
                         </div>
                         <div className="product__description product-description">
                             <h1 className="product-description__title">
                                 {product.title}
-                                <br /> 
-                                <span>Доступные цвета: {product.color.join(', ') + '.'}
-                                </span>    
                             </h1>
 
                             <ul className="product-description__list">
@@ -47,11 +47,13 @@ export default async function Page({params}: any) {
                                     ))
                                 }
                             </ul>
+
+                            <div className={styles.productDesc} dangerouslySetInnerHTML={{__html: product.description}} />
                         </div>
 
-                        <div className={style.sizes}>
+                        <div className={styles.sizes}>
                             <h3>Размеры</h3>
-                            <ul className={style.sizesList}>
+                            <ul className={styles.sizesList}>
                                 {
                                     product
                                         .sizes
@@ -65,7 +67,7 @@ export default async function Page({params}: any) {
                                                 }
                                             }, 
                                             index: number) => (
-                                        <li key={index} className={style.sizesItem}>
+                                        <li key={index} className={styles.sizesItem}>
                                             <Tooltip title={article} spec={sizes}/>
                                         </li>
                                     ))

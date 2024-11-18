@@ -21,7 +21,12 @@ type SpecType = {
     length: number
 }
 
-const Tooltip = ({title, name, spec}: {title: string, name: string, spec: SpecType}) => {
+type TooltipType = {
+    title: string;
+    spec: SpecType
+}
+
+const Tooltip = ({title, spec}: TooltipType) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const {refs, floatingStyles, context} = useFloating({
@@ -60,17 +65,7 @@ const Tooltip = ({title, name, spec}: {title: string, name: string, spec: SpecTy
                         {...getFloatingProps()}
                     >
                         <div className={styles.tooltipWrapper}>
-                            <h6 className={styles.tooltipTitle}>{name}</h6>
-                            <dl>
-                                <div>
-                                    <dt>Ширина</dt>
-                                    <dd>{spec.width}</dd>
-                                </div>
-                                <div>
-                                    <dt>Длина</dt>
-                                    <dd>{spec.length}</dd>
-                                </div>
-                            </dl>
+                           {spec.width} х {spec.length}
                         </div>
                     </div>
                 )}

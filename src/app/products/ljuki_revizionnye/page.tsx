@@ -20,6 +20,8 @@ const products = titles.map((title, index) => {
     }
 });
 
+console.log(products);
+
 export default async function Page() {
     return (
         <>
