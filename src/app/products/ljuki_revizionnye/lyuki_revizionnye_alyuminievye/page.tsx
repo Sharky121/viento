@@ -28,8 +28,6 @@ export default async function Page({ params }: any) {
         }
     });
 
-    console.log(products);
-
     return (
         <>
             <div className="page-main__content main-content">

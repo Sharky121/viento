@@ -11,7 +11,7 @@ async function getData() {
     return response.json();
 }
 
-export default async function Page({params}: any) {
+export default async function Page() {
     const data = await getData();
 
     const product = data
