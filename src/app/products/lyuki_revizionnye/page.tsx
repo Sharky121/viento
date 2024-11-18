@@ -20,6 +20,8 @@ const products = titles.map((title, index) => {
     }
 });
 
+console.log(products);
+
 export default async function Page() {
     return (
         <>
@@ -36,11 +38,11 @@ export default async function Page() {
                         {products.map(({id, title, slug}: { id: number, title: string, slug: string }) => (
                             <li key={id + uuidv4()} className="product-cards__item product-card">
                                 <div className="product-card__img">
-                                    <Image src={`/images/ljuki_revizionnye/${slug}/index.png`} width="180" height="180" alt="Фото продукта"/>
+                                    <Image src={`/images/lyuki_revizionnye/${slug}/index.png`} width="180" height="180" alt="Фото продукта"/>
                                 </div>
                     
                                 <h3 className="product-card__title">{title}</h3>
-                                <Link className="product-card__btn btn btn--outline" href={`/products/ljuki_revizionnye/${slug}`}>Подробнее</Link>
+                                <Link className="product-card__btn btn btn--outline" href={`/products/lyuki_revizionnye/${slug}`}>Подробнее</Link>
                             </li>
                         ))}
                     </ul>
