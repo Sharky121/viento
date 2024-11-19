@@ -32,7 +32,9 @@ export default function Header({customClassName}: HeaderType) {
                             <Link className="main-nav__link" href="/contacts">Контакты и реквизиты</Link>
                         </li>
                         <li className="main-nav__item">
-                            <Link className="main-nav__link" href="https://rutube.ru/channel/10012641/" target="_blank">Канал Rutube</Link>
+                            <Link className="main-nav__link" href="https://rutube.ru/channel/10012641/" target="_blank">
+                                Канал Rutube
+                            </Link>
                         </li>
                     </ul>
                 </nav>
