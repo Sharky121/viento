@@ -30,7 +30,7 @@ export default async function Page() {
 
                 <section className="main-content__product-cards product-cards">
                     <ul className="product-cards__list">
-                        {products.subcategory.map(({title, slug}: { title: string, slug: string }, index: number) => (
+                        {products?.subcategory.map(({title, slug}: { title: string, slug: string }, index: number) => (
                             <li key={index + uuidv4()} className="product-cards__item product-card">
                                 <div className="product-card__img">
                                     <Image src={`/images/sistemy_metallicheskikh_vozdukhovodov/${slug}/index.png`} width="180" height="180" alt="Фото продукта"/>
