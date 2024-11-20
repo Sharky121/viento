@@ -1,0 +1,82 @@
+[
+    {
+        "title": "Воздуховоды гибкие",
+        "type": "metal",
+        "series": "",
+        "color": [],
+        "features": [],
+        "sizes": [
+            {
+                "article": "",
+                "title": "",
+                "sizes": {
+                    "width": 150,
+                    "length": 150
+                }
+            }
+        ],
+        "images": [
+            "image_1.png"
+        ]
+    },
+    {
+        "title": "Площадки торцевые",
+        "type": "metal",
+        "series": "",
+        "color": [],
+        "features": [],
+        "sizes": [
+            {
+                "article": "",
+                "title": "",
+                "sizes": {
+                    "width": 150,
+                    "length": 150
+                }
+            }
+        ],
+        "images": [
+            "image_1.png"
+        ]
+    },
+    {
+        "title": "Турбодефлекторы",
+        "type": "metal",
+        "series": "",
+        "color": [],
+        "features": [],
+        "sizes": [
+            {
+                "article": "",
+                "title": "",
+                "sizes": {
+                    "width": 150,
+                    "length": 150
+                }
+            }
+        ],
+        "images": [
+            "image_1.png"
+        ]
+    },
+    {
+        "title": "Лента монтажная, хомуты металлические",
+        "type": "metal",
+        "series": "",
+        "color": [],
+        "features": [],
+        "sizes": [
+            {
+                "article": "",
+                "title": "",
+                "sizes": {
+                    "width": 150,
+                    "length": 150
+                }
+            }
+        ],
+        "images": [
+            "image_1.png"
+        ]
+    }
+]
