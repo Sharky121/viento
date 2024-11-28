@@ -29,37 +29,37 @@ export default async function Page({params}: {params: ParamsType}) {
 
     return (
         <>
-        <div className="page-main__content main-content">
-            <a className="main-content__back" href={`/products/reshetki_ventilyaczionnye/${params.category}`} id="back-page">Назад</a>
-            
-            <div className="main-content__header content-header">
-                <h2 className="content-header__title">Каталог</h2>
-                <p className="content-header__name"></p>
-            </div>
-
-            <section className="main-content__product product">
-                <div className="product__container">
-                    <div className="product__image">
-                        <Gallery images={product.images} url={`/images/reshetki_ventilyaczionnye/${params.category}/${params.product}`}/>
-                    </div>
-                    <div className="product__description product-description">
-                        <h1 className="product-description__title">
-                            {product.title}
-                        </h1>
-
-                        <ul className="product-description__list">
-                            {
-                                product.features.map((item: string, index: string) => (
-                                    <li key={index} className="product-description__item">{item}</li>
-                                ))
-                            }
-                        </ul>
-                    </div>
-
-                    {/* <div className={styles.productDesc} dangerouslySetInnerHTML={{__html: product.description}} /> */}
+            <div className="page-main__content main-content">
+                <a className="main-content__back" href={`/products/reshetki_ventilyaczionnye/${params.category}`} id="back-page">Назад</a>
+                
+                <div className="main-content__header content-header">
+                    <h2 className="content-header__title">Каталог</h2>
+                    <p className="content-header__name"></p>
                 </div>
-            </section>
-        </div>
-    </>
+
+                <section className="main-content__product product">
+                    <div className="product__container">
+                        <div className="product__image">
+                            <Gallery images={product.images} url={`/images/reshetki_ventilyaczionnye/${params.category}/${params.product}`}/>
+                        </div>
+                        <div className="product__description product-description">
+                            <h1 className="product-description__title">
+                                {product.title}
+                            </h1>
+
+                            <ul className="product-description__list">
+                                {
+                                    product.features.map((item: string, index: string) => (
+                                        <li key={index} className="product-description__item">{item}</li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+
+                        {/* <div className={styles.productDesc} dangerouslySetInnerHTML={{__html: product.description}} /> */}
+                    </div>
+                </section>
+            </div>
+        </>
     )
 }
