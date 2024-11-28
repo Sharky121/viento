@@ -59,7 +59,7 @@
   }
 }
 
-@for $i from 1 through 7 {
+@for $i from 1 through 8 {
 
   .menu-item--cat-#{$i}::before {
     background-image: url("/images/cat_#{$i}.png");

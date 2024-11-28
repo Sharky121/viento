@@ -39,7 +39,7 @@
     {
         "id": "5",
         "title": "Экраны декоративные для радиаторов",
-        "slug": "radiators_screens",
+        "slug": "ekrany_dekorativnye_dlya_radiatorov",
         "subcategory": []
     },
     {
@@ -52,23 +52,30 @@
         "id": "7",
         "title": "Системы металлических воздуховодов",
         "slug": "sistemy_metallicheskikh_vozdukhovodov",
-        "subcategory": [
-            {
-                "title": "Воздуховоды гибкие",
-                "slug": "vozdukhovody_gibkie"
-            },
-            {
-                "title": "Площадки торцевые",
-                "slug": "ploshhadki_torczevye"
-            },
-            {
-                "title": "Турбодефлекторы",
-                "slug": "turbodeflektory"
-            },
-            {
-                "title": "Лента монтажная, хомуты металлические",
-                "slug": "lenta_montazhnaya_khomuty_metallicheskie"
-            }
-        ]
+        "subcategory": []
+    },
+    {
+        "id": "8",
+        "title": "Воздуховоды гибкие",
+        "slug": "vozdukhovody_gibkie",
+        "subcategory": []
+    },
+    {
+        "id": "9",
+        "title": "Площадки торцевые",
+        "slug": "ploshhadki_torczevye",
+        "subcategory": []
+    },
+    {
+        "id": "10",
+        "title": "Турбодефлекторы",
+        "slug": "turbodeflektory",
+        "subcategory": []
+    },
+    {
+        "id": "11",
+        "title": "Лента монтажная, хомуты металлические",
+        "slug": "lenta_montazhnaya_khomuty_metallicheskie",
+        "subcategory": []
     }
 ]
