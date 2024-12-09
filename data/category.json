@@ -77,5 +77,11 @@
         "title": "Лента монтажная, хомуты металлические",
         "slug": "lenta_montazhnaya_khomuty_metallicheskie",
         "subcategory": []
+    },
+    {
+        "id": "12",
+        "title": "Корзины под кондиционеры",
+        "slug": "korziny_pod_kondicionery",
+        "subcategory": []
     }
 ]
