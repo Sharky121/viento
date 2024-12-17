@@ -2,7 +2,7 @@ export default function NotFound() {
   return (
       <>
         <div className="page-main__content main-content">
-          <a className="main-content__back" href={`/products/ekrany_dekorativnye_dlya_radiatorov/`} id="back-page">Назад</a>
+          <a className="main-content__back" href={`/products/`} id="back-page">Назад</a>
           
           <div className="main-content__header content-header">
               <h2 className="content-header__title">Извините</h2>

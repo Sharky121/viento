@@ -1,7 +1,9 @@
 [
     {
         "title": "Площадки торцевые пластиковые серии П",
-        "type": "plastic",
+        "slug": "ploshhadki_torczevye_plastikovye_serii_p",
+        "type": "ploshhadki_torczevye_plastic",
+        "type_title": "Площадки торцевые пластиковые",
         "series": "П",
         "color": [],
         "features": [
@@ -96,7 +98,9 @@
     },
     {
         "title": "Площадки торцевые пластиковые серии ПР",
-        "type": "plastic",
+        "slug": "ploshhadki_torczevye_plastikovye_serii_pr",
+        "type": "ploshhadki_torczevye_plastic",
+        "type_title": "Площадки торцевые пластиковые",
         "series": "П",
         "color": [],
         "features": [
@@ -192,7 +196,9 @@
     },
     {
         "title": "Площадки торцевые пластиковые серии ПГ",
-        "type": "plastic",
+        "slug": "ploshhadki_torczevye_plastikovye_serii_pg",
+        "type": "ploshhadki_torczevye_plastic",
+        "type_title": "Площадки торцевые пластиковые",
         "series": "ПГ",
         "color": [],
         "features": [
@@ -222,7 +228,9 @@
     },
     {
         "title": "Площадки торцевые пластиковые серии ПВ",
-        "type": "plastic",
+        "slug": "ploshhadki_torczevye_plastikovye_serii_pv",
+        "type": "ploshhadki_torczevye_plastic",
+        "type_title": "Площадки торцевые пластиковые",
         "series": "ПВ",
         "color": [],
         "features": [
@@ -252,7 +260,9 @@
     },
     {
         "title": "Площадки торцевые пластиковые серии ПВР",
-        "type": "plastic",
+        "slug": "ploshhadki_torczevye_plastikovye_serii_pvr",
+        "type": "ploshhadki_torczevye_plastic",
+        "type_title": "Площадки торцевые пластиковые",
         "series": "ПВР",
         "color": [],
         "features": [
@@ -283,7 +293,9 @@
     },
     {
         "title": "Площадки торцевые пластиковые с обратным клапаном серии П-ОК",
-        "type": "plastic",
+        "slug": "ploshhadki_torczevye_plastikovye_s_obratnym_klapanom_serii_p-ok",
+        "type": "ploshhadki_torczevye_plastic",
+        "type_title": "Площадки торцевые пластиковые",
         "series": "П-ОК",
         "color": [],
         "features": [
@@ -335,7 +347,9 @@
     },
     {
         "title": "Площадки торцевые металлические серии ПМ",
-        "type": "metal",
+        "slug": "ploshhadki_torczevye_metallicheskie_serii_pm",
+        "type": "ploshhadki_torczevye_metal",
+        "type_title": "Площадки торцевые металлические",
         "series": "ПМ",
         "color": [],
         "features": [
@@ -439,7 +453,9 @@
     },
     {
         "title": "Площадки торцевые металлические серии ПМР",
-        "type": "metal",
+        "slug": "ploshhadki_torczevye_metallicheskie_serii_pmr",
+        "type": "ploshhadki_torczevye_metal",
+        "type_title": "Площадки торцевые металлические",
         "series": "ПМР",
         "color": [],
         "features": [
