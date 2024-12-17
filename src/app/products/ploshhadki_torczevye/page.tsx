@@ -2,18 +2,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { v4 as uuidv4 } from 'uuid';
 
-async function getData() {
-    const response = await fetch(`${process.env.HOST}/api/ploshchadki-torcevye`, {cache: 'no-store'});
+// async function getData() {
+//     const response = await fetch(`${process.env.HOST}/api/ploshchadki-torcevye`, {cache: 'no-store'});
 
-    if (!response.ok) {
-        throw new Error('Failed to fetch data');
-    }
+//     if (!response.ok) {
+//         throw new Error('Failed to fetch data');
+//     }
 
-    return response.json();
-}
+//     return response.json();
+// }
 
 export default async function Page() {
-    const products = await getData();
+    // const products = await getData();
 
     return (
         <>
@@ -26,7 +26,7 @@ export default async function Page() {
                 </div>
 
                 <section className="main-content__product-cards product-cards">
-                    <ul className="product-cards__list">
+                    {/* <ul className="product-cards__list">
                         {products.map(({id, title, slug}: { id: number, title: string, slug: string }) => (
                             <li key={id + uuidv4()} className="product-cards__item product-card">
                                 <div className="product-card__img">
@@ -37,7 +37,7 @@ export default async function Page() {
                                 <Link className="product-card__btn btn btn--outline" href={`/products/ploshhadki_torczevye/${slug}`}>Подробнее</Link>
                             </li>
                         ))}
-                    </ul>
+                    </ul> */}
                 </section>
             </div>
         </>
