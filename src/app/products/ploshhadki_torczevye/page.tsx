@@ -26,7 +26,7 @@ export default async function Page() {
                 </div>
 
                 <section className="main-content__product-cards product-cards">
-                    {/* <ul className="product-cards__list">
+                    <ul className="product-cards__list">
                         {products.map(({id, title, slug}: { id: number, title: string, slug: string }) => (
                             <li key={id + uuidv4()} className="product-cards__item product-card">
                                 <div className="product-card__img">
@@ -37,7 +37,7 @@ export default async function Page() {
                                 <Link className="product-card__btn btn btn--outline" href={`/products/ploshhadki_torczevye/${slug}`}>Подробнее</Link>
                             </li>
                         ))}
-                    </ul> */}
+                    </ul>
                 </section>
             </div>
         </>
