@@ -2,18 +2,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { v4 as uuidv4 } from 'uuid';
 
-// async function getData() {
-//     const response = await fetch(`${process.env.HOST}/api/ploshchadki-torcevye`, {cache: 'no-store'});
+async function getData() {
+    const response = await fetch(`${process.env.HOST}/api/ploshchadki-torcevye`, {cache: 'no-store'});
 
-//     if (!response.ok) {
-//         throw new Error('Failed to fetch data');
-//     }
+    if (!response.ok) {
+        throw new Error('Failed to fetch data');
+    }
 
-//     return response.json();
-// }
+    return response.json();
+}
 
 export default async function Page() {
-    // const products = await getData();
+    const products = await getData();
 
     return (
         <>
