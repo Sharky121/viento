@@ -1,21 +1,21 @@
 import Gallery from "@/app/components/gallery/gallery";
 
-// async function getData() {
-//     const response = await fetch(`${process.env.HOST}/api/ploshchadki-torcevye`, {cache: 'no-store'});
+async function getData() {
+    const response = await fetch(`${process.env.HOST}/api/ploshchadki-torcevye`, {cache: 'no-store'});
 
-//     if (!response.ok) {
-//         throw new Error('Failed to fetch data')
-//     }
+    if (!response.ok) {
+        throw new Error('Failed to fetch data')
+    }
 
-//     return response.json();
-// }
+    return response.json();
+}
 
 type ParamsType = {
     slug: string;
 }
 
 export default async function Page({params}: {params: ParamsType}) {
-    // const data = await getData();
+    const data = await getData();
 
     // const product = data.find(({slug}: {slug: string}) => slug === params.slug);
 
