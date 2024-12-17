@@ -6,7 +6,7 @@ async function getData() {
     const response = await fetch(`${process.env.HOST}/api/ploshchadki-torcevye`, {cache: 'no-store'});
 
     if (!response.ok) {
-        throw new Error('Failed to fetch data');
+        throw new Error('Failed to fetch datsa');
     }
 
     return response.json();
