@@ -3,7 +3,7 @@ const { slugify } = require('transliter');
 import Gallery from "@/app/components/gallery/gallery";
 
 async function getData() {
-    const response = await fetch(`${process.env.HOST}/api/turbodeflektory`, {cache: 'no-store'});
+    const response = await fetch(`${process.env.HOST}/api/khomuty`, {cache: 'no-store'});
 
     if (!response.ok) {
         throw new Error('Failed to fetch data')
@@ -30,7 +30,7 @@ export default async function Page() {
                 <section className="main-content__product product">
                     <div className="product__container">
                         <div className="product__image">
-                            <Gallery images={product.images} url={`/images/products/turbodeflektory`}/>
+                            <Gallery images={product.images} url={`/images/products/lenta_montazhnaya_khomuty_metallicheskie`}/>
                         </div>
                         <div className="product__description product-description">
                             <h1 className="product-description__title">
