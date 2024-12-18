@@ -1,4 +1,5 @@
 import Link from "next/link";
+const { slugify } = require('transliter');
 
 type SiteMenuType = {
     customClassName: string;
@@ -11,7 +12,7 @@ type ProductType = {
 }
 
 async function getData() {
-    const response = await fetch(`${process.env.HOST}/api/categories`);
+    const response = await fetch(`${process.env.HOST}/api/categories`, {cache: 'no-store'});
 
     return response.json();
 }

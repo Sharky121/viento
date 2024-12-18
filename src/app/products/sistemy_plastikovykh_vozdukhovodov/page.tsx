@@ -7,7 +7,7 @@ async function getData() {
     const response = await fetch(`${process.env.HOST}/api/vozdukhovody`, {cache: 'no-store'});
 
     if (!response.ok) {
-        throw new Error('Failed to fetch data')
+        throw new Error('Failed to fetch data');
     }
 
     return response.json();
@@ -23,7 +23,7 @@ export default async function Page() {
                 
                 <div className="main-content__header content-header">
                     <h2 className="content-header__title">Каталог</h2>
-                    <p className="content-header__name">Системы металлических воздуховодов</p>
+                    <p className="content-header__name">Системы пластиковых воздуховодов</p>
                 </div>
 
                 <section className="main-content__product-cards product-cards">
