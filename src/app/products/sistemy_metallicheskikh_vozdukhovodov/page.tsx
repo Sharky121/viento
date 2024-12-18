@@ -30,7 +30,7 @@ export default async function Page() {
 
                 <section className="main-content__product-cards product-cards">
                     <ul className="product-cards__list">
-                        {data.map(({title}: { title: string }, index: number) => (
+                        {products.map(({title}: { title: string }, index: number) => (
                             <li key={index + uuidv4()} className="product-cards__item product-card">
                                 <div className="product-card__img">
                                     <Image src={`/images/products/sistemy_metallicheskikh_vozdukhovodov/${slugify(title, '_')}/index.png`} width="180" height="180" alt="Фото продукта"/>
