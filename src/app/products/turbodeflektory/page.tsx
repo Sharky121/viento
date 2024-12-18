@@ -17,7 +17,9 @@ type ParamsType = {
 }
 
 export default async function Page({params}: {params: ParamsType}) {
-    const product = await getData();
+    const data = await getData();
+
+    const product = data[0];
 
     return (
         <>
@@ -32,7 +34,7 @@ export default async function Page({params}: {params: ParamsType}) {
                 <section className="main-content__product product">
                     <div className="product__container">
                         <div className="product__image">
-                            <Gallery images={product.images} url={`/images/products/turbodeflektory/${params.slug}`}/>
+                            <Gallery images={product.images} url={`/images/products/turbodeflektory`}/>
                         </div>
                         <div className="product__description product-description">
                             <h1 className="product-description__title">
