@@ -29,7 +29,7 @@
 .product-description__list {
     @extend %list-reset;
 
-    width: calc((100%) / 2);
+    width: 100%
 }
 
 .product-description__item {
