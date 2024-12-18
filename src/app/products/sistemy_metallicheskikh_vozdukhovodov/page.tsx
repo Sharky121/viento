@@ -15,6 +15,8 @@ async function getData() {
 
 export default async function Page() {
     const data = await getData();
+
+    const products = data.filter((element: {type: string}) => element.type === 'sistemy_metallicheskikh_vozdukhovodov'); 
     
     return (
         <>
@@ -28,14 +30,14 @@ export default async function Page() {
 
                 <section className="main-content__product-cards product-cards">
                     <ul className="product-cards__list">
-                        {data.map(({title, slug}: { title: string, slug: string }, index: number) => (
+                        {data.map(({title}: { title: string }, index: number) => (
                             <li key={index + uuidv4()} className="product-cards__item product-card">
                                 <div className="product-card__img">
-                                    <Image src={`/images/products/sistemy_metallicheskikh_vozdukhovodov/${slug}/index.png`} width="180" height="180" alt="Фото продукта"/>
+                                    <Image src={`/images/products/sistemy_metallicheskikh_vozdukhovodov/${slugify(title, '_')}/index.png`} width="180" height="180" alt="Фото продукта"/>
                                 </div>
                     
                                 <h3 className="product-card__title">{title}</h3>
-                                <Link className="product-card__btn btn btn--outline" href={`/products/sistemy_metallicheskikh_vozdukhovodov/${slug}`}>Подробнее</Link>
+                                <Link className="product-card__btn btn btn--outline" href={`/products/sistemy_metallicheskikh_vozdukhovodov/${slugify(title, '_')}`}>Подробнее</Link>
                             </li>
                         ))}
                     </ul>
