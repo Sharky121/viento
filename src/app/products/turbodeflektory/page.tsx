@@ -2,22 +2,22 @@ const { slugify } = require('transliter');
 
 import Gallery from "@/app/components/gallery/gallery";
 
-async function getData() {
-    const response = await fetch(`${process.env.HOST}/api/turbodeflektory`, {cache: 'no-store'});
+// async function getData() {
+//     const response = await fetch(`${process.env.HOST}/api/turbodeflektory`, {cache: 'no-store'});
 
-    if (!response.ok) {
-        throw new Error('Failed to fetch data')
-    }
+//     if (!response.ok) {
+//         throw new Error('Failed to fetch data')
+//     }
 
-    return response.json();
-}
+//     return response.json();
+// }
 
 type ParamsType = {
     slug: string;
 }
 
 export default async function Page({params}: {params: ParamsType}) {
-    const product = await getData();
+    // const product = await getData();
 
     return (
         <>
@@ -26,16 +26,16 @@ export default async function Page({params}: {params: ParamsType}) {
                 
                 <div className="main-content__header content-header">
                     <h2 className="content-header__title">Каталог</h2>
-                    <p className="content-header__name">{product.title}</p>
+                    {/* <p className="content-header__name">{product.title}</p> */}
                 </div>
 
                 <section className="main-content__product product">
                     <div className="product__container">
                         <div className="product__image">
-                            <Gallery images={product.images} url={`/images/products/turbodeflektory/${params.slug}`}/>
+                            {/* <Gallery images={product.images} url={`/images/products/turbodeflektory/${params.slug}`}/> */}
                         </div>
                         <div className="product__description product-description">
-                            <h1 className="product-description__title">
+                            {/* <h1 className="product-description__title">
                                 {product.title}
                             </h1>
 
@@ -45,7 +45,7 @@ export default async function Page({params}: {params: ParamsType}) {
                                         <li key={index} className="product-description__item">{item}</li>
                                     ))
                                 }
-                            </ul>
+                            </ul> */}
                         </div>
 
                         {/* <div className={styles.productDesc} dangerouslySetInnerHTML={{__html: product.description}} /> */}
