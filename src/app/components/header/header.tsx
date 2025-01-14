@@ -17,13 +17,16 @@ export default function Header({customClassName}: HeaderType) {
                     <span className="hamburger-menu__text">Меню</span>
                 </button>
                 <Link className="page-header__logo logo" href="/">
-                    <Image src={logoPic} alt="c" width={180} height={51}/>
+                    <Image src={logoPic} alt="c" width={180} height={51} unoptimized/>
                 </Link>
 
                 <nav className="page-header__nav main-nav">
                     <ul className="main-nav__list">
                         <li className="main-nav__item">
                             <Link className="main-nav__link main-nav__link--catalog" href="/products">Каталог</Link>
+                        </li>
+                        <li className="main-nav__item">
+                            <Link className="main-nav__link main-nav__link" href="/contract_casting">Контрактное литье</Link>
                         </li>
                         <li className="main-nav__item">
                             <Link className="main-nav__link" href="/about">О компании</Link>

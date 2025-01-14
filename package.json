@@ -11,8 +11,10 @@
   "dependencies": {
     "@fancyapps/ui": "^5.0.33",
     "@floating-ui/react": "^0.26.27",
+    "@types/nodemailer": "^6.4.17",
     "modern-normalize": "^2.0.0",
     "next": "14.0.2",
+    "nodemailer": "^6.9.16",
     "react": "^18",
     "react-dom": "^18",
     "sharp": "0.33.1",
