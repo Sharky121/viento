@@ -80,12 +80,17 @@
     },
     {
         "id": "13",
+        "title": "Приточно-вытяжные клапаны",
+        "slug": "ventilation-valves"
+    },
+    {
+        "id": "14",
         "title": "Турбодефлекторы",
         "slug": "turbodeflektory",
         "subcategory": []
     },
     {
-        "id": "14",
+        "id": "15",
         "title": "Шкафы коллекторные",
         "slug": "shkafy_kollektornye",
         "subcategory": []
