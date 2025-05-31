@@ -67,12 +67,6 @@
         "subcategory": []
     },
     {
-        "id": "10",
-        "title": "Турбодефлекторы",
-        "slug": "turbodeflektory",
-        "subcategory": []
-    },
-    {
         "id": "11",
         "title": "Лента монтажная, хомуты металлические",
         "slug": "lenta_montazhnaya_khomuty_metallicheskie",
@@ -82,6 +76,18 @@
         "id": "12",
         "title": "Корзины под кондиционеры",
         "slug": "korziny_pod_kondicionery",
+        "subcategory": []
+    },
+    {
+        "id": "13",
+        "title": "Турбодефлекторы",
+        "slug": "turbodeflektory",
+        "subcategory": []
+    },
+    {
+        "id": "14",
+        "title": "Шкафы коллекторные",
+        "slug": "shkafy_kollektornye",
         "subcategory": []
     }
 ]
