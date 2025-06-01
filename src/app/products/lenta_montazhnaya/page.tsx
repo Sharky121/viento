@@ -37,7 +37,7 @@ export default async function Page() {
                                 </div>
                     
                                 <h3 className="product-card__title">{title}</h3>
-                                <Link className="product-card__btn btn btn--outline" href={`/products/mounting-tape/${slugify(title, '_')}`}>Подробнее</Link>
+                                <Link className="product-card__btn btn btn--outline" href={`/products/lenta_montazhnaya/${slugify(title, '_')}`}>Подробнее</Link>
                             </li>
                         ))}
                     </ul>
