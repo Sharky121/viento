@@ -27,7 +27,7 @@ export default async function Page() {
     return (
         <>
             <div className="page-main__content main-content">
-                <a className="main-content__back" href="/products/vents">Назад</a>
+                <a className="main-content__back" href="/products/ventilyatory_osevye_bytovye">Назад</a>
                 
                 <div className="main-content__header content-header">
                     <h2 className="content-header__title">Каталог</h2>
@@ -39,10 +39,10 @@ export default async function Page() {
                         {data.map(({id, title, slug}: { id: number, title: string, slug: string }) => (
                             <li key={id + uuidv4()} className="product-cards__item product-card">
                                 <div className="product-card__img">
-                                    <Image src={`/images/vents/ventilyatory_potolochnye/${slug}/index.png`} width="180" height="180" alt="Фото продукта"/>
+                                    <Image src={`/images/ventilyatory_osevye_bytovye/ventilyatory_potolochnye/${slug}/index.png`} width="180" height="180" alt="Фото продукта"/>
                                 </div>
                                 <h3 className="product-card__title">{title}</h3>
-                                <Link className="product-card__btn btn btn--outline" href={`/products/vents/ventilyatory_potolochnye/${slug}`}>Подробнее</Link>
+                                <Link className="product-card__btn btn btn--outline" href={`/products/ventilyatory_osevye_bytovye/ventilyatory_potolochnye/${slug}`}>Подробнее</Link>
                             </li>
                         ))}
                     </ul>

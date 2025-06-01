@@ -1,0 +1,82 @@
+[
+    {
+        "id": 0,
+        "title": "Вентиляторы осевые бытовые",
+        "slug": "ventilyatory_osevye_bytovye"
+    },
+    {
+        "id": 1,
+        "title": "Вентиляторы осевые коммерческие",
+        "slug": "ventilyatory_osevye_kommercheskie"
+    },
+    {
+        "id": 2,
+        "title": "Люки ревизионные",
+        "slug": "lyuki_revizionnye"
+    },
+    {
+        "id": 3,
+        "title": "Решетки вентиляционные",
+        "slug": "reshetki_ventilyacionnye"
+    },
+    {
+        "id": 4,
+        "title": "Экраны декоративные для радиаторов",
+        "slug": "ekrany_dekorativnye_dlya_radiatorov"
+    },
+    {
+        "id": 5,
+        "title": "Системы пластиковых воздуховодов",
+        "slug": "sistemy_plastikovykh_vozdukhovodov"
+    },
+    {
+        "id": 6,
+        "title": "Системы металлических воздуховодов",
+        "slug": "sistemy_metallicheskikh_vozdukhovodov"
+    },
+    {
+        "id": 7,
+        "title": "Анемостаты",
+        "slug": "anemostaty"
+    },
+    {
+        "id": 8,
+        "title": "Воздуховоды гибкие",
+        "slug": "vozdukhovody_gibkie"
+    },
+    {
+        "id": 9,
+        "title": "Выходы стенные",
+        "slug": "vykhody_stennye"
+    },
+    {
+        "id": 10,
+        "title": "Лента монтажная",
+        "slug": "lenta_montazhnaya"
+    },
+    {
+        "id": 11,
+        "title": "Площадки торцевые",
+        "slug": "ploshchadki_tortsevye"
+    },
+    {
+        "id": 12,
+        "title": "Приточно-вытяжные клапаны",
+        "slug": "ventilation-valves"
+    },
+    {
+        "id": 13,
+        "title": "Рекурператоры приточно-вытяжной",
+        "slug": "rekuperatory_priotochno-vytyazhnoi"
+    },
+    {
+        "id": 14,
+        "title": "Турбодефлекторы",
+        "slug": "turbodeflektory"
+    },
+    {
+        "id": 15,
+        "title": "Шкафы коллекторные",
+        "slug": "shkafy_kollektornye"
+    }
+] 

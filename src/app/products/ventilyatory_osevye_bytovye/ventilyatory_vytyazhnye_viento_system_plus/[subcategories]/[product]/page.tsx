@@ -386,7 +386,7 @@ export default async function Page({ params }: any) {
     return (
         <>
             <div className="page-main__content main-content">
-                <a className="main-content__back" href={`/products/vents/ventilyatory_vytyazhnye_viento_system_plus/${params.subcategories}`}>Назад</a>
+                <a className="main-content__back" href={`/products/ventilyatory_osevye_bytovye/ventilyatory_vytyazhnye_viento_system_plus/${params.subcategories}`}>Назад</a>
                 
                 <div className="main-content__header content-header">
                     <h2 className="content-header__title">Каталог</h2>
@@ -396,7 +396,7 @@ export default async function Page({ params }: any) {
                 <section className="main-content__product product">
                     <div className="product__container">
                         <div className="product__image">
-                            <Gallery images={productData?.images} url={`/images/vents/ventilyatory_vytyazhnye_viento_system_plus/${params.subcategories}/${params.product}`}/>
+                            <Gallery images={productData?.images} url={`/images/ventilyatory_osevye_bytovye/ventilyatory_vytyazhnye_viento_system_plus/${params.subcategories}/${params.product}`}/>
                         </div>
                         <div className={styles.description}>
                             <h1 className={styles.descriptionTitle}>{productData?.title} <br /> 
