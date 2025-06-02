@@ -15,7 +15,7 @@ async function getData() {
 }
 
 export default async function Page() {
-
+    const products = await getData();
 
     return (
         <>
@@ -29,7 +29,16 @@ export default async function Page() {
 
                 <section className="main-content__product-cards product-cards">
                     <ul className="product-cards__list">
-
+                        {products.map(({id, title, slug}: { id: string, title: string, slug: string }) => (
+                            <li key={id + uuidv4()} className="product-cards__item product-card">
+                                <div className="product-card__img">
+                                    <Image src={`/images/products/sistemy_metallicheskih_vozduhovodov/${slug}/index.png`} width="180" height="180" alt="Фото продукта"/>
+                                </div>
+                    
+                                <h3 className="product-card__title">{title}</h3>
+                                <Link className="product-card__btn btn btn--outline" href={`/products/sistemy_metallicheskih_vozduhovodov/${slug}`}>Подробнее</Link>
+                            </li>
+                        ))}
                     </ul>
                 </section>
             </div>
