@@ -14,13 +14,13 @@ async function getData() {
 }
 
 export default async function Page({ params }: { params: { category: string } }) {
-    // const products = await getData();
+    const products = await getData();
 
-    // const categories = products.find((p: any) => p.slug === params.category);
+    const categories = products.find((p: any) => p.slug === params.category);
 
-    // if (!categories) {
-    //     return <div>Продукт не найден</div>;
-    // }
+    if (!categories) {
+        return <div>Продукт не найден</div>;
+    }
 
     return (
         <>
@@ -34,7 +34,7 @@ export default async function Page({ params }: { params: { category: string } })
 
                 <section className="main-content__product-cards product-cards">
                     <ul className="product-cards__list">
-                        {/* {categories.items.map(({title, slug}: { title: string, slug: string }, index: number) => (
+                        {categories.items.map(({title, slug}: { title: string, slug: string }, index: number) => (
                             <li key={index + uuidv4()} className="product-cards__item product-card">
                                 <div className="product-card__img">
                                     <Image src={`/images/products/reshetki_ventilyacionnye/${categories.slug}/${slug}/index.png`} width="180" height="180" alt="Фото продукта"/>
@@ -43,7 +43,7 @@ export default async function Page({ params }: { params: { category: string } })
                                 <h3 className="product-card__title">{title}</h3>
                                 <Link className="product-card__btn btn btn--outline" href={`/products/reshetki_ventilyacionnye/${categories.slug}/${slug}`}>Подробнее</Link>
                             </li>
-                        ))} */}
+                        ))}
                     </ul>
                 </section>
             </div>
