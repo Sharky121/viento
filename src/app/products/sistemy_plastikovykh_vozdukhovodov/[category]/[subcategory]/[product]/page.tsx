@@ -1,9 +1,8 @@
+import Gallery from "@/app/components/gallery/gallery";
 const { slugify } = require('transliter');
 
-import Gallery from "@/app/components/gallery/gallery";
-
 async function getData() {
-    const response = await fetch(`${process.env.HOST}/api/vozdukhovody`, {cache: 'no-store'});
+    const response = await fetch(`${process.env.HOST}/api/vozdukhovody-plastic`, {cache: 'no-store'});
 
     if (!response.ok) {
         throw new Error('Failed to fetch data')
@@ -13,18 +12,31 @@ async function getData() {
 }
 
 type ParamsType = {
-    slug: string;
+    category: string;
+    subcategory: string;
+    product: string;
 }
 
-export default async function Page({params}: {params: ParamsType}) {
+
+export default async function Page({ params }: { params: ParamsType }) {
     const data = await getData();
 
-    const product = data.find(({title}: {title: string}) => slugify(title, '_') === params.slug);
+    const category = data.find((p: any) => p.slug === params.category);
+
+    const subcategory = category.items.find((p: any) => p.slug === params.subcategory);
+
+    const product = subcategory.items.find((p: any) => p.slug === params.product);
+
+    console.log(product);
+
+    if (!product) {
+        return <div>Продукт не найден</div>;
+    }
 
     return (
         <>
             <div className="page-main__content main-content">
-                <a className="main-content__back" href={`/products/sistemy_plastikovykh_vozdukhovodov/`} id="back-page">Назад</a>
+                <a className="main-content__back" href="/products/">Назад</a>
                 
                 <div className="main-content__header content-header">
                     <h2 className="content-header__title">Каталог</h2>
@@ -34,7 +46,7 @@ export default async function Page({params}: {params: ParamsType}) {
                 <section className="main-content__product product">
                     <div className="product__container">
                         <div className="product__image">
-                            <Gallery images={product.images} url={`/images/products/sistemy_plastikovykh_vozdukhovodov/${params.slug}`}/>
+                            <Gallery images={product.images} url={`/images/productss/${params.category}`}/>
                         </div>
                         <div className="product__description product-description">
                             <h1 className="product-description__title">
@@ -42,18 +54,14 @@ export default async function Page({params}: {params: ParamsType}) {
                             </h1>
 
                             <ul className="product-description__list">
-                                {
-                                    product.features.map((item: string, index: string) => (
-                                        <li key={index} className="product-description__item">{item}</li>
-                                    ))
-                                }
+                                {product.features.map((item: string, index: number) => (
+                                    <li key={index} className="product-description__item">{item}</li>
+                                ))}
                             </ul>
                         </div>
-
-                        {/* <div className={styles.productDesc} dangerouslySetInnerHTML={{__html: product.description}} /> */}
                     </div>
                 </section>
             </div>
         </>
-    )
-}
+    );
+} 
