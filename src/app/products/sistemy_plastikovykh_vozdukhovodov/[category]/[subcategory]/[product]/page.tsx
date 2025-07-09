@@ -27,6 +27,8 @@ export default async function Page({ params }: { params: ParamsType }) {
 
     const product = subcategory.items.find((p: any) => p.slug === params.product);
 
+    console.log('category.slug');
+
     if (!product) {
         return <div>Продукт не найден</div>;
     }
@@ -44,11 +46,11 @@ export default async function Page({ params }: { params: ParamsType }) {
                 <section className="main-content__product product">
                     <div className="product__container">
                         <div className="product__image">
-                            <Gallery images={product.images} url={`/images/productss/${params.category}`}/>
+                            <Gallery images={product.images} url={`/images/products/sistemy_plastikovykh_vozdukhovodov/${params.category}/${params.subcategory}/${params.product}`}/>
                         </div>
                         <div className="product__description product-description">
                             <h1 className="product-description__title">
-                                {/* {product.title} */}
+                                {product.title}
                             </h1>
 
                             <ul className="product-description__list">
