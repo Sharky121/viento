@@ -19,7 +19,7 @@ export default async function Page({ params }: { params: { category: string } })
     const categories = products.find((p: any) => p.slug === params.category);
 
     if (!categories) {
-        return <div>Продукт не найден</div>;
+            return <div>Продукт не найден {} {params.category}</div>;
     }
 
     return (
