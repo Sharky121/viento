@@ -543,9 +543,28 @@
     },
     {
         "title": "Решетки для межкомнатных дверей",
-        "slug": "reshetki_dlya_mezhkomnatnyh_dverej",
+        "slug": "reshetki_dlya_mezhkomnatnykh_dverej",
         "poster": [
             "index.png"
+        ],
+        "items": [
+            {
+                "title": "Дверная решетка 4513РД",
+                "slug": "reshetki_dlya_mezhkomnatnykh_dverej_4513rd",
+                "poster": [
+                    "index.png"
+                ],
+                "images": [
+                    "index.png"
+                ],
+                "colors": [],
+                "features": [
+                    "Решетки пластмассовые переточные двухсторонние",
+                    "Предназначены для выравнивания температуры и влажности в смежных комнатах",
+                    "Устанавливаются в дверное полотно",
+                    "Материал – полистирол"
+                ]
+            }
         ]
     }
 ] 
