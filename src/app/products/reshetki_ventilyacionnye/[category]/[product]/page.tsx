@@ -54,11 +54,15 @@ export default async function Page({ params }: { params: ParamsType }) {
                                 )}
                             </h1>
 
-                            <ul className="product-description__list">
-                                {product.features.map((item: string, index: number) => (
-                                    <li key={index} className="product-description__item">{item}</li>
-                                ))}
-                            </ul>
+                            {
+                               product.features.length !== 0 && (
+                                <ul className="product-description__list">
+                                    {product.features.map((item: string, index: number) => (
+                                        <li key={index} className="product-description__item">{item}</li>
+                                    ))}
+                                </ul>
+                               ) 
+                            }    
                         </div>
                     </div>
                 </section>
